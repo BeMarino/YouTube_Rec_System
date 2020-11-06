@@ -1,0 +1,5 @@
+tempo_osservazione:10;
+tipo_esplorazione:next;
+email:emailperlatesi@gmail.com;
+password:t3stings3lenium;
+steps:10;
