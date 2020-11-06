@@ -16,7 +16,7 @@ base_url="https://www.youtube.com/watch?v="
 driver = webdriver.Firefox()
 driver.get("http://www.youtube.com")
 driver.implicitly_wait(5)
-print(steps,tempo_osservazione)
+
 
 assert "YouTube" in driver.title
 
@@ -27,7 +27,7 @@ lib.login(driver,email,password)
 
 videos=driver.find_element_by_id("contents").find_elements_by_id("content")
 
-with open("session.csv","a+",newline='') as session:
+with open("result/session.csv","a+",newline='') as session:
    
     watched=lib.getHomeVideosId(videos, session)
     watched.click()
