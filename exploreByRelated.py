@@ -22,28 +22,29 @@ assert "YouTube" in driver.title
 #-----Accesso account-------
 lib.login(driver,email,password)
 #-----/Accesso account------
-#-----Ricerca dei video in home page e visualizzazione del primo consigliato-----
 
-videos=driver.find_element_by_id("contents").find_elements_by_id("content")
 
-with open("result/session.csv","a+",newline='') as session:
-   
-    watched=lib.getHomeVideosId(videos, session)
+
+with open("results/account1/by_related_exploration.csv","a+",newline='') as session:
+    #-----Ricerca dei video in home page e visualizzazione del primo consigliato-----
+    watched=lib.getHomeVideosId(driver,session)
     watched.click()
-        #-----/Ricerca dei video in home page e visualizzazione del primo consigliato-----
+    currentVideoId=driver.current_url[driver.current_url.index("=")+1:]
+    related_videos=lib.getRelatedVideos(driver,session,currentVideoId)
+    i=0
     while steps>0:
+        
         currentVideoId=driver.current_url[driver.current_url.index("=")+1:]
         lenght=lib.getDuration(currentVideoId)
-        next_video=lib.getRelatedVideos(driver,session,currentVideoId)
+        
     
-
         if lenght>tempo_osservazione:
             time.sleep(tempo_osservazione)
         else:
             time.sleep(lenght-lenght/4)
         steps-=1
-        next_video.click()
-
+        related_videos[i].click()
+        i+=2
 assert "No results found." not in driver.page_source
 time.sleep(5)
 #driver.close()

@@ -1,4 +1,4 @@
-tempo_osservazione:10;
+tempo_osservazione:120;
 tipo_esplorazione:next;
 email:emailperlatesi@gmail.com;
 password:t3stings3lenium;
