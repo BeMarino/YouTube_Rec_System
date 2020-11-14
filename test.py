@@ -1,24 +1,14 @@
-from selenium import webdriver
-from selenium.common import exceptions
-from selenium.webdriver.common.keys import Keys
-import lib
+import json
+import googleapiclient.discovery
 import csv
-import time
-toClick=""
-email="emailperlatesi@gmail.com"
-password="t3stings3lenium"
-base_url="https://www.youtube.com/watch?v="
-"""driver = webdriver.Firefox()
-driver.get("http://www.youtube.com")
-driver.implicitly_wait(5)
+import mysql.connector
+from mysql.connector import Error
+import lib
 
-assert "YouTube" in driver.title
+api_key="AIzaSyCWH5-fbx-6X4GHB3fc291PdVOBCyYOQGQ"
 
-#-----Accesso account-------
-lib.login(driver,email,password)"""
-#-----/Accesso account------
-#-----Ricerca dei video in home page e visualizzazione del primo consigliato-----
-    
-#-----/Ricerca dei video in home page e visualizzazione del primo consigliato-----
-print (lib.config())
-#driver.close()
+connection= lib.create_connection("localhost","root","","Tesi Benny")
+with open("results/account1/next_exploration.csv","r") as risultati:
+    reader=csv.reader(risultati)
+    for row in reader:
+        print(row)

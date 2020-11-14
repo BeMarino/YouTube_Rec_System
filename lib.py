@@ -1,10 +1,42 @@
-
 import isodate
 import json
 import googleapiclient.discovery    
 import csv
 import time
+import mysql.connector
+from mysql.connector import Error
 from selenium.common import exceptions
+
+
+def create_connection(host_name, user_name, user_password,db):
+
+    connection = None
+
+    try:
+
+        connection = mysql.connector.connect(
+
+            host=host_name,
+
+            user=user_name,
+
+            passwd=user_password,
+
+            database=db
+
+        )
+
+        print("Connection to MySQL DB successful")
+
+    except Error as e:
+
+        print(f"The error '{e}' occurred")
+
+
+    return connection
+
+
+
 
 def getDuration(id):
    
