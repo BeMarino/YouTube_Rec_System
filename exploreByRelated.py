@@ -31,6 +31,7 @@ with open("results/account1/by_related_exploration.csv","a+",newline='') as sess
     watched.click()
     currentVideoId=driver.current_url[driver.current_url.index("=")+1:]
     related_videos=lib.getRelatedVideos(driver,session,currentVideoId)
+    print(related_videos)
     i=0
     while steps>0:
         
