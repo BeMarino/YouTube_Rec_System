@@ -5,13 +5,11 @@ import lib
 import csv
 import time
 
-config=lib.config()
 
-steps=int(config["steps"])
 
-email=config["email"]
-password=config["password"]
-tempo_osservazione=int(config["tempo_osservazione"])
+
+password="t3stings3lenium"
+
 base_url="https://www.youtube.com/watch?v="
 driver = webdriver.Firefox()
 driver.get("http://www.youtube.com")
@@ -21,7 +19,7 @@ driver.implicitly_wait(5)
 assert "YouTube" in driver.title
 
 #-----Accesso account-------
-lib.login(driver,email,password)
+lib.login(driver,account,password)
 #-----/Accesso account------
 #-----Ricerca dei video in home page e visualizzazione del primo consigliato-----
 
