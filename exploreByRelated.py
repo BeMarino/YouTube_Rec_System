@@ -49,6 +49,8 @@ with open("results/account1/by_related_exploration.csv","a+",newline='') as sess
         i+=2
 assert "No results found." not in driver.page_source
 time.sleep(5)
-#driver.close()
+driver.close()
 
+#------Una volta terminati i passi avvio la procedura per inserire i dati relativi ai video nel database------- 
+exec(open("fillUpDb.py"))
 

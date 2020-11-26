@@ -25,7 +25,7 @@ lib.login(driver,account,password)
 
 
 
-with open("results/account1/next_exploration.csv","a+",newline='') as session:
+with open("results/"+account+"/next_exploration.csv","a+",newline='') as session:
    
     watched=lib.getHomeVideosId(driver,session)
     watched.click()
@@ -48,5 +48,8 @@ with open("results/account1/next_exploration.csv","a+",newline='') as session:
 assert "No results found." not in driver.page_source
 time.sleep(5)
 driver.close()
+
+#------Una volta terminati i passi avvio la procedura per inserire i dati relativi ai video nel database-------
+exec(open("fillUpDb.py"))
 
 
