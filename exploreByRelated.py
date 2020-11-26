@@ -27,9 +27,10 @@ lib.login(driver,email,password)
 
 with open("results/account1/by_related_exploration.csv","a+",newline='') as session:
     #-----Ricerca dei video in home page e visualizzazione del primo consigliato-----
-    watched=lib.getHomeVideosId(driver,session)
-    watched.click()
+    toWatch=lib.getHomeVideosId(driver,session)
+    toWatch.click()
     currentVideoId=driver.current_url[driver.current_url.index("=")+1:]
+    time.sleep(5)
     related_videos=lib.getRelatedVideos(driver,session,currentVideoId)
     print(related_videos)
     i=0

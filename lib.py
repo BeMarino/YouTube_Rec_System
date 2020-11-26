@@ -95,7 +95,10 @@ def getHomeVideosId(driver,file):
             i+=1
         except exceptions.NoSuchElementException:
             print("elemento non trovato")
+        print(url)
         print(i)
+        if(i==20):
+            break
     return next_video
 
 
@@ -110,7 +113,7 @@ def getNextVideo(driver,file,watched):
 
     writer=csv.writer(file)
     writer.writerow([watched,next_video[next_video.index("=")+1:],1,0,time.time() ])
-
+    print(len(related_videos))
     for v in related_videos[1:]:
         relatedVideoId=v.find_element_by_id("thumbnail").get_attribute("href")[v.find_element_by_id("thumbnail").get_attribute("href").index("=")+1:]
         if("&" in relatedVideoId):
@@ -125,19 +128,23 @@ def getNextVideo(driver,file,watched):
 #     restituisce l'intera lista dei video suggeriti-----
 def getRelatedVideos(driver,file,watched):
     
-    related_videos=driver.find_element_by_id("related").find_element_by_id("items")
-    next_=related_videos.find_element_by_id("contents")
+    
+    next_=driver.find_element_by_id("related").find_element_by_id("items").find_element_by_id("contents")
     next_video=next_.find_element_by_id("thumbnail").get_attribute("href")
-    related_videos=driver.find_element_by_id("related").find_elements_by_id("items")
+    related_videos=driver.find_element_by_id("related").find_element_by_id("items").find_elements_by_id("dismissable")
+    print(next_video)
+
     writer=csv.writer(file)
     writer.writerow([watched,next_video[next_video.index("=")+1:],1,0,time.time() ])
-
-    for v in related_videos.find_elements_by_id("dismissable"):
-        id=v.find_element_by_id("thumbnail").get_attribute("href")[v.find_element_by_id("thumbnail").get_attribute("href").index("=")+1:]
-        if("&" in id):
-            id=id[0:id.index("&")]
-        writer.writerow([watched,id,0,0,time.time()])
-      
+    print(len(related_videos))
+    for v in related_videos[1:]:
+        relatedVideoId=v.find_element_by_id("thumbnail").get_attribute("href")[v.find_element_by_id("thumbnail").get_attribute("href").index("=")+1:]
+        if("&" in relatedVideoId):
+            relatedVideoId=relatedVideoId[0:relatedVideoId.index("&")]
+        writer.writerow([watched,relatedVideoId,0,0,time.time() ])
+        
+        print(relatedVideoId)
+    
     
     return related_videos
 

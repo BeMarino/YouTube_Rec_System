@@ -36,8 +36,9 @@ with open("results/account1/next_exploration.csv","a+",newline='') as session:
         
         currentVideoId=driver.current_url[driver.current_url.index("=")+1:]
         lenght=lib.getDuration(currentVideoId)
+        time.sleep(3)
         next_video=lib.getNextVideo(driver,session,currentVideoId)
-    
+        
 
         if lenght>tempo_osservazione:
             time.sleep(tempo_osservazione)
