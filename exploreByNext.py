@@ -50,6 +50,6 @@ time.sleep(5)
 driver.close()
 
 #------Una volta terminati i passi avvio la procedura per inserire i dati relativi ai video nel database-------
-exec(open("fillUpDb.py"))
+exec(open("fillUpDb.py").read(),{"account":account,"tipo":"next","query":"","tempo":tempo_osservazione})
 
 

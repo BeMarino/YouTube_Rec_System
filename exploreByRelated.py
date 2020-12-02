@@ -5,12 +5,9 @@ import lib
 import csv
 import time
 
-config=lib.config()
 
-steps=int(config["steps"])
-email=config["email"]
 password=config["password"]
-tempo_osservazione=int(config["tempo_osservazione"])
+
 base_url="https://www.youtube.com/watch?v="
 driver = webdriver.Firefox()
 driver.get("http://www.youtube.com")
@@ -20,7 +17,7 @@ driver.implicitly_wait(5)
 assert "YouTube" in driver.title
 
 #-----Accesso account-------
-lib.login(driver,email,password)
+lib.login(driver,account,password)
 #-----/Accesso account------
 
 
@@ -52,5 +49,5 @@ time.sleep(5)
 driver.close()
 
 #------Una volta terminati i passi avvio la procedura per inserire i dati relativi ai video nel database------- 
-exec(open("fillUpDb.py"))
+exec(open("fillUpDb.py").read(),{"account":account,"tipo":"related","query":"","tempo":tempo_osservazione})
 
