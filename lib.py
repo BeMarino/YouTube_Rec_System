@@ -47,7 +47,8 @@ def getSuggestedTimes(video_id,cursor):
 
 
 def getDuration(id):
-   
+    if "&" in id:
+        id=id[0:id.index("&")]
     api_key="AIzaSyCWH5-fbx-6X4GHB3fc291PdVOBCyYOQGQ"
 
     api_service_name = "youtube"
@@ -86,7 +87,7 @@ def getHomeVideosId(driver,file):
         try:    
 
             url=element.find_element_by_id("thumbnail").get_attribute("href") 
-           
+            print(url)
             if next_video=="":
                 next_video=element
                 writer.writerow(["",url[url.index("=")+1:],1,1,time.time() ])
@@ -95,7 +96,7 @@ def getHomeVideosId(driver,file):
             i+=1
         except exceptions.NoSuchElementException:
             print("elemento non trovato")
-        print(url)
+        
         print(i)
         if(i==20):
             break
@@ -132,7 +133,6 @@ def getRelatedVideos(driver,file,watched):
     next_=driver.find_element_by_id("related").find_element_by_id("items").find_element_by_id("contents")
     next_video=next_.find_element_by_id("thumbnail").get_attribute("href")
     related_videos=driver.find_element_by_id("related").find_element_by_id("items").find_elements_by_id("dismissable")
-    print(next_video)
 
     writer=csv.writer(file)
     writer.writerow([watched,next_video[next_video.index("=")+1:],1,0,time.time() ])
