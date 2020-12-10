@@ -1,6 +1,8 @@
 from selenium import webdriver
 from selenium.common import exceptions
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support import expected_conditions as cond
+from selenium.webdriver.support.ui import WebDriverWait
 import lib
 import csv
 import time
@@ -9,9 +11,11 @@ import time
 password="t3stings3lenium"
 
 base_url="https://www.youtube.com/watch?v="
-driver = webdriver.Chrome()
+driver = webdriver.Firefox()
+driver.install_addon("C:\\Users\\Benny\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\vj6f2v1i.default-release-1605184895016\\extensions\\uBlock0@raymondhill.net.xpi", temporary=True)
 driver.get("http://www.youtube.com")
-#driver.implicitly_wait(5)
+driver.implicitly_wait(5)
+wait = WebDriverWait(driver, 10); 
 
 
 assert "YouTube" in driver.title
@@ -33,13 +37,14 @@ with open("results/account1/by_related_exploration.csv","a+",newline='') as sess
     i=0
     while steps>0:
         
-        try: 
-            time.sleep(8)  
-            skipButton=driver.find_element_by_class_name("ytp-ad-skip-button ytp-button")
-            skipButton.click()
+        '''try: 
+            
+            element = wait.until(cond.element_to_be_clickable(driver.find_element_by_xpath("//button[@class='ytp-ad-skip-button ytp-button']")))
+            element.click();  
+            
             print("Pubblicita' skippata")
         except exceptions.NoSuchElementException:
-            print("Il video non contiene pubblicita'")
+            print("Il video non contiene pubblicita'")'''
 
         currentVideoId=driver.current_url[driver.current_url.index("=")+1:]
         lenght=lib.getDuration(currentVideoId)
@@ -52,7 +57,7 @@ with open("results/account1/by_related_exploration.csv","a+",newline='') as sess
         steps-=1
         if i>=1:
             driver.back()
-            time.sleep(5)
+        wait.until(cond.element_to_be_clickable(related_videos[i]))
         related_videos[i].click()
         i+=1
 assert "No results found." not in driver.page_source

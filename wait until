@@ -1,0 +1,3 @@
+WebDriverWait wait = new WebDriverWait(Scenario1Test.driver, 10); 
+WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//div[@id='brandSlider']/div[1]/div/div/div/img)[50]")));
+element.click();

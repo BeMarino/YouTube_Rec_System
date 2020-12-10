@@ -3,8 +3,8 @@ import json
 import googleapiclient.discovery    
 import csv
 import time
-import mysql.connector
-from mysql.connector import Error
+#import mysql.connector
+#from mysql.connector import Error
 from selenium.common import exceptions
 
 
@@ -88,12 +88,13 @@ def getHomeVideosId(driver,file):
 
             url=element.find_element_by_id("thumbnail").get_attribute("href") 
             print(url)
-            if next_video=="":
-                next_video=element
-                writer.writerow(["",url[url.index("=")+1:],1,1,time.time() ])
-            else:
-                writer.writerow(["",url[url.index("=")+1:],0,1,time.time() ])
-            i+=1
+            if(url):
+                if next_video=="":
+                    next_video=element
+                    writer.writerow(["",url[url.index("=")+1:],1,1,time.time() ])
+                else:
+                    writer.writerow(["",url[url.index("=")+1:],0,1,time.time() ])
+                i+=1
         except exceptions.NoSuchElementException:
             print("elemento non trovato")
         
