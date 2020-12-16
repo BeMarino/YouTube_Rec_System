@@ -4,7 +4,5 @@ from mysql.connector import Error
 import lib
 connection= lib.create_connection("localhost","root","","tesi")
 cursor=connection.cursor()
-last_session_query="select max(id) from sessione"
-cursor.execute(last_session_query)
-result=cursor.fetchone()[0]
-print(result)
+query_setup="update setupsessione set executedTimes=%s, status=%s where id=%s"
+cursor.execute(query_setup,[1,"completed",8])
