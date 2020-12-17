@@ -6,9 +6,6 @@ import lib
 import csv
 import time
 
-
-
-
 password="t3stings3lenium"
 
 base_url="https://www.youtube.com/watch?v="

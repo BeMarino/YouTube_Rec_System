@@ -3,6 +3,7 @@ from tkinter import ttk
 import mysql.connector
 from mysql.connector import Error
 from lib import create_connection
+
 def callback(input): 
       
     if input.isdigit(): 
@@ -18,16 +19,20 @@ def callback(input):
         return False
 
 def save(account,method,steps,time,query,iterations,frequency,gradeFrequency):
+    forConversion={"Minuti":60,"Ore":3600,"Giorni":3600*24}
     DBquery="insert into setupsessione(account,tipo,query,steps,viewTime,status,frequency,iterations) values(%s,%s,%s,%s,%s,%s,%s,%s)"
     connection= create_connection("localhost","root","","tesi")
     cursor=connection.cursor()
-    cursor.execute(DBquery,[account,method,query,steps,time,"ready",frequency+"_"+gradeFrequency,iterations])
+    
+    cursor.execute(DBquery,[account,method,query,steps,time,"ready",int(frequency)*int(forConversion[gradeFrequency]),iterations])
     connection.commit()
     
 
 accountList={" Account iscritto ad alcuni canali":"emailperlatesi@gmail.com"," Account pulito":"emailperlatesi2@gmail.com"}
 
 methodList={" Per successivo":1," Tutti i correlati":2}
+
+
 
 window = tk.Tk() 
 
