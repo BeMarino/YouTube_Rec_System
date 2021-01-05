@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "exploreByRelated.py", line 79, in <module>
+    exec(open("fillUpDb.py").read(),{"account":account,"tipo":2,"query":query,"idSetup":idSetup})
+NameError: name 'account' is not defined

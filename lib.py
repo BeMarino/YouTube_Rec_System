@@ -4,6 +4,9 @@ import googleapiclient.discovery
 import csv
 import time
 import mysql.connector
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as cond
+from selenium.webdriver.support.ui import WebDriverWait
 from mysql.connector import Error
 from selenium.common import exceptions
 
@@ -41,7 +44,7 @@ def isInDb(video_id,cursor):
         return 0
 
 def setSessionEndTime(setupId):
-   query=" update sessione set finishedAt=%s where id=(select max(id) from sessione where setupId=%s)"
+   query=" update sessione set finishedAt=%s where id=(select max(id) where setupId=%s )"
    connection=create_connection("localhost","root","","Tesi")
    cursor=connection.cursor()
    cursor.execute(query,[time.time(),setupId])
@@ -75,13 +78,14 @@ def getDuration(id):
     return int(dur.total_seconds())
  
 def login(driver,email,password):
-    elem = driver.find_element_by_id("action-button")
+    wait = WebDriverWait(driver, 10)
+    elem =wait.until(cond.element_to_be_clickable((By.ID,"action-button")))
     elem.find_element_by_class_name("yt-simple-endpoint").click()
     elem=driver.find_element_by_id("identifierId")
     elem.send_keys(email)
     driver.find_element_by_id("identifierNext").find_element_by_tag_name("button").click()
-    time.sleep(2)
-    driver.find_element_by_id("password").find_element_by_tag_name("input").send_keys(password)
+    
+    wait.until(cond.element_to_be_clickable((By.ID,"password"))).find_element_by_tag_name("input").send_keys(password)
     driver.find_element_by_id("passwordNext").find_element_by_tag_name("button").click()
 
 #Recupera gli id dei video presenti nella lista a parametro, li stampa nel csv e ritorna il primo video suggerito
@@ -112,15 +116,19 @@ def getHomeVideosId(driver,file,idSetup):
 
 #Recupera gli id dei video presenti nella lista a parametro, li stampa nel csv e ritorna il primo video suggerito
 def getQueryResult(driver,file,idSetup): 
-    videos=driver.find_element_by_id("contents").find_elements_by_id("dismissable")
+    wait=WebDriverWait(driver,15)
+    contents=wait.until(cond.presence_of_element_located((By.ID,"contents")))
+    videos=contents.find_elements_by_id("dismissable")
     next_video=""
     writer=csv.writer(file)
     i=0
+    print(videos)
     for element in videos:
+        print(element)
         try:    
-
+            
             url=element.find_element_by_id("thumbnail").get_attribute("href") 
-            print(url)
+           
             if(url):
                 if next_video=="":
                     next_video=element
@@ -130,10 +138,12 @@ def getQueryResult(driver,file,idSetup):
                 i+=1
         except exceptions.NoSuchElementException:
             print("elemento non trovato")
-        
+        except exceptions.StaleElementReferenceException:
+            pass
         print(i)
         if(i==20):
             break
+    print(next_video)
     return next_video
 
 
@@ -185,3 +195,54 @@ def getRelatedVideos(driver,file,watched,tempoOsservazione,idSetup):
 #----la funzione config setta i parametri di esplorazione in base ad un file di configurazione fornito in input----
 def search(driver,query,enter):
     driver.find_element_by_id("search-input").find_element_by_tag_name("input").send_keys(query+enter)
+    time.sleep(10)
+
+def getDataFromDb(query):
+    
+    dict_to_hist={}
+    connection=create_connection("localhost","root","","tesi")
+    cursor=connection.cursor()
+    cursor.execute(query)
+        
+    for result in cursor.fetchall():
+        
+        dict_to_hist[result[0]]=int(result[1])
+    
+    return dict_to_hist
+
+#-----Ritorna tutte le sessioni ongoing che devono essere rieseguite----------
+def checkForOngoing(connection,cursor):
+    ongoing_query="select * from setupsessione where status='ongoing' and "+str(time.time())+"-lastExecution>frequency limit 1"
+    cursor.execute(ongoing_query)
+
+    #---Creo un dizionario che ha come chiavi i nomi delle colonne del db e come valori i dati presenti all'interno della tabella----
+    desc = cursor.description
+    column_names = [col[0] for col in desc]
+    setup_list = [dict(zip(column_names, row))  for row in cursor.fetchall()]
+    print ("Carico i setup ongoing da eseguire\n")
+  
+    return setup_list
+
+def checkForReady(connection,cursor):
+    query="select id,account,tipo,query,steps,viewTime,iterations,executedTimes from setupsessione where status='ready' limit 1 "
+    cursor.execute(query)
+
+    #---Creo un dizionario che ha come chiavi i nomi delle colonne del db e come valori i dati presenti all'interno della tabella----
+    desc = cursor.description
+    column_names = [col[0] for col in desc]
+    setup_list = [dict(zip(column_names, row))  for row in cursor.fetchall()]
+    print ("Carico i setup ready da eseguire\n")
+    
+    return setup_list
+    
+def aggiorna_setupsessione(setup,connection,cursor):
+    query_setup="update setupsessione set executedTimes=%s, status=%s where id=%s"
+
+    if(setup['iterations']-setup['executedTimes']<=1):  
+        
+        cursor.execute(query_setup,[setup['executedTimes']+1,"completed",setup['id']])
+    else:
+        cursor.execute(query_setup,[setup['executedTimes']+1,"ongoing",setup['id']])
+    print(time.time())
+    cursor.execute("INSERT INTO sessione(setupId,startedAt) VALUES(%s,%s)",[setup['id'],time.time()])
+    connection.commit()

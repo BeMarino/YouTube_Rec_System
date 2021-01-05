@@ -1,0 +1,106 @@
+elemento non trovato
+0
+https://www.youtube.com/watch?v=1LWcDhk0pWQ
+1
+https://www.youtube.com/watch?v=G6OgoDEv1y0
+2
+https://www.youtube.com/watch?v=69O1FyBcnR8
+3
+https://www.youtube.com/watch?v=EG6sbscbOx0
+4
+https://www.youtube.com/watch?v=otYqv4BJBHA
+5
+https://www.youtube.com/watch?v=UP2RrbNjY2o
+6
+https://www.youtube.com/watch?v=n6W5NEtKAhA
+7
+https://www.youtube.com/watch?v=XZyVq2aVegk
+8
+https://www.youtube.com/watch?v=XZyVq2aVegk
+9
+https://www.youtube.com/watch?v=m_XI7i7xER0
+10
+https://www.youtube.com/watch?v=oOvOyJtLJ7g
+11
+https://www.youtube.com/watch?v=HVVe5BvIc2I
+12
+https://www.youtube.com/watch?v=8yvZGCsP3Z0
+13
+https://www.youtube.com/watch?v=2kQmDBdnycM
+14
+https://www.youtube.com/watch?v=gkl6mgo-5I0
+15
+https://www.youtube.com/watch?v=cXQOcd-vOXA
+16
+https://www.youtube.com/watch?v=DZK4NNRWGdU
+17
+https://www.youtube.com/watch?v=8SD60gtawu0
+18
+https://www.youtube.com/watch?v=yA9VI1y-UVA
+19
+https://www.youtube.com/watch?v=hffFZPqRyhQ
+20
+[<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="3b60c6a4-7c0c-483c-aa35-6c13f1da87d8")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="9262d5a6-f5db-43e3-9778-3e3f55f4f6f6")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="7d3e06fd-2ce6-49e0-88d4-9a7130ead00c")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="f650e048-088f-4a7f-b01f-2a05a120b71e")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="c6c87a58-c409-4e2e-8e97-2a4e65b58185")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="833ada2f-7483-4e8d-8b18-14c9266a4297")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="eb3e04c6-6632-42ef-8f7d-1e8dcd9bf667")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="427ee95a-f809-41a1-a459-f18d579a6960")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="983dd9ca-b10a-4fa8-bd9f-2f39d7394be8")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="c4b4ce8e-8cc2-499c-96a3-b60a8f54ce8d")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="db52f481-6618-4b4c-a34b-9e326b5d1779")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="10727906-8b59-405e-936d-f2ee418d5f48")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="4fe55723-2156-4de6-9b65-4f89c38d0d06")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="219e6582-4200-4bea-a122-1ae56c55da46")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="0244acf4-c999-4737-b176-884676298888")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="db9097f5-9e97-49b4-a247-72b9fff1efb5")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="7c949c48-724d-44ee-93f5-e2afa0b78061")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="ed9baef9-a8eb-4c63-b2f6-a2d188b8a37c")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="fa0a906e-18e1-445a-9727-35c6fbef6bce")>]
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="3b60c6a4-7c0c-483c-aa35-6c13f1da87d8")>
+1
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="9262d5a6-f5db-43e3-9778-3e3f55f4f6f6")>
+2
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="7d3e06fd-2ce6-49e0-88d4-9a7130ead00c")>
+3
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="f650e048-088f-4a7f-b01f-2a05a120b71e")>
+4
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="c6c87a58-c409-4e2e-8e97-2a4e65b58185")>
+5
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="833ada2f-7483-4e8d-8b18-14c9266a4297")>
+6
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="eb3e04c6-6632-42ef-8f7d-1e8dcd9bf667")>
+7
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="427ee95a-f809-41a1-a459-f18d579a6960")>
+8
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="983dd9ca-b10a-4fa8-bd9f-2f39d7394be8")>
+9
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="c4b4ce8e-8cc2-499c-96a3-b60a8f54ce8d")>
+10
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="db52f481-6618-4b4c-a34b-9e326b5d1779")>
+11
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="10727906-8b59-405e-936d-f2ee418d5f48")>
+12
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="4fe55723-2156-4de6-9b65-4f89c38d0d06")>
+13
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="219e6582-4200-4bea-a122-1ae56c55da46")>
+14
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="0244acf4-c999-4737-b176-884676298888")>
+15
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="db9097f5-9e97-49b4-a247-72b9fff1efb5")>
+16
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="7c949c48-724d-44ee-93f5-e2afa0b78061")>
+17
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="ed9baef9-a8eb-4c63-b2f6-a2d188b8a37c")>
+18
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="fa0a906e-18e1-445a-9727-35c6fbef6bce")>
+19
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="3b60c6a4-7c0c-483c-aa35-6c13f1da87d8")>
+20
+5zsTNnnVKCQ
+yGqP54lv9q4
+vhzW0KEO-uM
+Cnjs83yowUM
+DR0iEbK3zDQ
+FXtcIk0d3GQ
+TiVNgBq8Sl0
+sxE9cRRS9wo
+l4O81bv_x40
+WSB0lJwcUKU
+CUZtlTqSZAc
+8u6w7CQuK-E
+kAXvKzyxd7g
+Ve6ZMjNIG4M
+_K7E4qeRazU
+OdpDpaUB9eo
+s759w1SEWNI
+VbgC6rhy28g
+DGyCcsQDoNI
+[<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="60c58809-6dd4-4ef2-801d-6f40df69988e")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="62c7671a-b2fc-4c57-9bf7-508e39152528")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="c69bb00b-276c-4bb6-b3d6-19a7a2cf5ed8")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="1bf5223b-db7b-455a-bc61-cfa0f322888e")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="713ad43e-543f-42cd-aced-ace0791340b9")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="5ca45040-a4d5-4423-9ca9-4ca037bf3d19")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="5ce4cb6f-f5a0-49fb-8712-99d2f45d1230")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="32b1b537-5255-4a24-8400-44e8ee0972db")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="bfe940f3-e51c-475a-9628-a8b460b82902")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="20f3226a-d2f9-4dd4-96b2-d3ccc719b77f")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="8b877331-5b89-4bb4-80de-809ff5eabcb9")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="6c4fda3f-21de-4619-ab7b-926fa05d6b40")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="333a3b6a-9e90-45af-9829-9b259efde055")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="614e66fb-3fb1-4e01-a42f-01ba2764bed1")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="c2900957-332d-44a4-8aca-c70894a60d62")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="44d7480f-4599-4648-8a80-0a30b0afae55")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="7f3053fc-48a6-4458-8c06-65b100bb66bc")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="4884fe8b-4bbe-4229-8d5b-4205cdafa070")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="de3640c2-3254-4739-ada8-81b0b5b6f103")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="7beb48fa-009c-4273-aa76-5761e01acd01", element="0bb52452-0d14-44e5-9825-0530b364c6a3")>]
+il video con id=dxp4WCkGJrA durera'180.0s
+il video con id=7kgmf_MfneY durera'661.0s
+Connection to MySQL DB successful

@@ -1,8 +1,15 @@
+import schedule 
 
-import mysql.connector
-from mysql.connector import Error
-import lib
-connection= lib.create_connection("localhost","root","","tesi")
-cursor=connection.cursor()
-query_setup="update setupsessione set executedTimes=%s, status=%s where id=%s"
-cursor.execute(query_setup,[1,"completed",8])
+from subprocess import Popen, PIPE
+import subprocess
+
+process = Popen(['python','main.py'], stdout=PIPE, stderr=PIPE)
+stdout, stderr = process.communicate()
+print(stderr)
+
+#schedule.every(2).minutes.do(call_me())
+'''while True: 
+    try:
+        schedule.run_pending()
+    except:
+        print("terminato con errore")'''

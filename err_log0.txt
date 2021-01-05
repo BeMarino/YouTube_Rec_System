@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "exploreByNext.py", line 31, in <module>
+    assert "YouTube" in driver.title
+  File "C:\Users\Benny\AppData\Local\Programs\Python\Python38-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 342, in title
+    resp = self.execute(Command.GET_TITLE)
+  File "C:\Users\Benny\AppData\Local\Programs\Python\Python38-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Benny\AppData\Local\Programs\Python\Python38-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: Browsing context has been discarded
+

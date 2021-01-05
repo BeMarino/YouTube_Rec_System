@@ -6,6 +6,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 import lib
 import csv
 import time
+import sys
+from json import loads
 
 
 password="t3stings3lenium"
@@ -17,32 +19,31 @@ driver.install_addon("C:\\Users\\Benny\\AppData\\Roaming\\Mozilla\\Firefox\\Prof
 driver.get("http://www.youtube.com")
 driver.implicitly_wait(5)
 wait = WebDriverWait(driver, 10); 
-
-
+#setup=sys.argv[1]
+setup=loads(sys.argv[1])
 assert "YouTube" in driver.title
 
 #-----Accesso account-------
-lib.login(driver,account,password)
+lib.login(driver,setup['account'],password)
 #-----/Accesso account------
+print(setup['account'],setup['id'])
 
 
-
-with open("results/"+account+"/by_related_exploration.csv","a+",newline='') as session:
+with open("results/"+setup['account']+"/by_related_exploration.csv","a+",newline='') as session:
     #-----Ricerca dei video in home page e visualizzazione del primo consigliato-----
-    toWatch=lib.getHomeVideosId(driver,session,idSetup)
-    if(query):
-        lib.search(driver,query,Keys.ENTER)
+    toWatch=lib.getHomeVideosId(driver,session,setup['id'])
+    if(setup['query']):
+        lib.search(driver,setup['query'],Keys.ENTER)
         
-        time.sleep(40)
-        lib.getQueryResult(session,)
+        lib.getQueryResult(driver,session,setup['id']).click()
     else:
         toWatch.click()
     currentVideoId=driver.current_url[driver.current_url.index("=")+1:]
     time.sleep(5)
-    related_videos=lib.getRelatedVideos(driver,session,currentVideoId,tempo_osservazione,idSetup)
+    related_videos=lib.getRelatedVideos(driver,session,currentVideoId,setup['viewTime'],setup['id'])
     print(related_videos)
     i=0
-    while steps>0:
+    while setup['steps']>0:
         
         '''try: 
             
@@ -58,11 +59,11 @@ with open("results/"+account+"/by_related_exploration.csv","a+",newline='') as s
         #---se le api di yt restituiscono length=0 vuol dire che si sta osservando una live, per evitare errori setto length=31, trattandola come un normale video
         if length==0: 
             length=31
-        if length>tempo_osservazione:
-            time.sleep(tempo_osservazione)
+        if length>setup['viewTime']:
+            time.sleep(setup['viewTime'])
         else:
             time.sleep(length-length/4)
-        steps-=1
+        setup['steps']-=1
         if i>=1:
             driver.back()
         #wait.until(cond.element_to_be_clickable(related_videos[i].find_element_by_id("thumbnail")))
@@ -74,6 +75,7 @@ time.sleep(5)
 driver.close()
 
 #------Una volta terminati i passi avvio la procedura per inserire i dati relativi ai video e alla sessione nel database------- 
-lib.setSessionEndTime(idSetup)
-exec(open("fillUpDb.py").read(),{"account":account,"tipo":2,"query":query,"idSetup":idSetup})
+lib.setSessionEndTime(setup['id'])
+
+exec(open("fillUpDb.py").read(),{"account":setup['account'],"tipo":2,"idSetup":setup['id']})
 

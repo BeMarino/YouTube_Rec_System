@@ -6,6 +6,18 @@ from mysql.connector import Error
 import lib
 import time
 import datetime
+import re
+
+
+
+def deEmojify(text):
+    regrex_pattern = re.compile(pattern = "["
+        u"\U0001F600-\U0001F64F"  # emoticons
+        u"\U0001F300-\U0001F5FF"  # symbols & pictographs
+        u"\U0001F680-\U0001F6FF"  # transport & map symbols
+        u"\U0001F1E0-\U0001F1FF"  # flags (iOS)
+                           "]+", flags = re.UNICODE)
+    return regrex_pattern.sub(r'',text)
 
 accountList=["emailperlatesi@gmail.com","emailperlatesi2@gmail.com"]
 files=["next_exploration.csv","by_related_exploration.csv"]
@@ -32,19 +44,26 @@ with open("results/"+account+"/"+files[tipo-1],"r") as risultati:
     for row in reader:
         if("&" in row[1]):
             row[1]=row[1][0:row[1].index("&")]
-        print(row[1])
+       
         if(i!=0):
             if(not lib.isInDb(row[1],cursor)):
-                
+                print(row[1])
                 video_request=youtube.videos().list(
                     part="snippet",
-                    id=row[1]
+                    id=row[0]
                 )
-
+                print(row[0])
                 video_response = video_request.execute()
+                time.sleep(2)
+                
                 if(video_response["pageInfo"]["totalResults"]>0):
+                    print(
+                deEmojify(video_response["items"][0]["snippet"]['title']),
+                        deEmojify(video_response["items"][0]["snippet"]['description']),
+                        deEmojify(video_response["items"][0]["snippet"]['channelId']),
+                        deEmojify(video_response["items"][0]["snippet"]['channelTitle'])    )
                     category=video_response["items"][0]["snippet"]["categoryId"]
-                    print(video_response)               
+                                
                     category_request = youtube.videoCategories().list(
                             part="snippet",
                             id=category
@@ -54,10 +73,10 @@ with open("results/"+account+"/"+files[tipo-1],"r") as risultati:
                     
                     values=[
                         row[1],
-                        video_response["items"][0]["snippet"]['title'],
-                        video_response["items"][0]["snippet"]['description'],
-                        video_response["items"][0]["snippet"]['channelId'],
-                        video_response["items"][0]["snippet"]['channelTitle'],
+                        deEmojify(video_response["items"][0]["snippet"]['title']),
+                        deEmojify(video_response["items"][0]["snippet"]['description']),
+                        deEmojify(video_response["items"][0]["snippet"]['channelId']),
+                        deEmojify(video_response["items"][0]["snippet"]['channelTitle']),
                         row[0],
                         1,
                         category,

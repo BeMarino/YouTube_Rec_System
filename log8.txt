@@ -1,0 +1,91 @@
+{"id": 20, "account": "emailperlatesi@gmail.com", "tipo": 1, "query": "Mes", "steps": 10, "viewTime": 30, "status": "ongoing", "frequency": "1800", "iterations": 5, "executedTimes": 3, "lastExecution": ""}
+<class 'dict'>
+elemento non trovato
+0
+https://www.youtube.com/watch?v=mgAg3Ox6wUo
+1
+https://www.youtube.com/watch?v=G6OgoDEv1y0
+2
+https://www.youtube.com/watch?v=rW1hpqVU6qk
+3
+https://www.youtube.com/watch?v=69O1FyBcnR8
+4
+https://www.youtube.com/watch?v=pp57N5NRfho
+5
+https://www.youtube.com/watch?v=n6W5NEtKAhA
+6
+https://www.youtube.com/watch?v=UasLh3fYfTg
+7
+None
+7
+elemento non trovato
+7
+https://www.youtube.com/watch?v=6wlyLxAjS-4
+8
+https://www.youtube.com/watch?v=0CHY-qc1uxA
+9
+https://www.youtube.com/watch?v=bx1NqZ7Wvf8
+10
+https://www.youtube.com/watch?v=ZpRm8ZGVgZM
+11
+https://www.youtube.com/watch?v=VgHGTeatIfs
+12
+https://www.youtube.com/watch?v=VgHGTeatIfs
+13
+https://www.youtube.com/watch?v=ou29dbsYYkA
+14
+https://www.youtube.com/watch?v=XZyVq2aVegk
+15
+https://www.youtube.com/watch?v=8cT3RabCTXU
+16
+https://www.youtube.com/watch?v=BuFqWP5eT3I
+17
+https://www.youtube.com/watch?v=n5_j1zWKZss
+18
+https://www.youtube.com/watch?v=a2tGp3v-mV8
+19
+https://www.youtube.com/watch?v=9nUA2iN6teU
+20
+[<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="c7457b6e-d747-474f-8b5d-13f36df73638")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="dc2a3fb8-8b2e-41fb-a7c7-f3c10fcab9a5")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="675ed084-0aaa-4461-a473-0c3f38da19c5")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="89d73631-e90c-4f4b-b234-39e812c423c1")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="ee3a2137-c4b3-44df-9d13-2f931b10f188")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="75c71546-52cd-407b-bba4-cbd824584273")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="2cdf48f7-7a4b-4c5d-9a85-fc42e5da3c31")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="84cbd82e-073e-4443-99a4-e6bd03aa4758")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="22e8a243-6fd2-433c-87ea-7d05401e3d58")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="57a34286-808d-4089-9bf8-036e9b64f3b7")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="38e726b0-b2a0-4981-8b3a-a92a792fa69b")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="014efdff-8ea6-4149-b8fc-90f9b79ef7c1")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="c9d58416-5d3d-4129-a203-19754c2d4703")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="1e3a832d-b8e2-4bbe-872e-319b70e06445")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="114bace3-d4e0-4dcb-b8c9-c95ac7c72215")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="52e4a395-f9db-49a7-b9ec-9ff4aa0cbf95")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="9cf0e716-4b5b-49fb-9e09-96e020c59e19")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="e1fb84a8-ee98-4064-9410-e494c68b7837")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="6ac6db99-f412-4a85-8e0a-2788cb1c70a6")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="ad1714da-dea1-4401-8ab0-21046c4725ae")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="52e1d4aa-83c9-40b8-829c-e444fdf8efb7")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="ee7e04c3-3134-4937-875b-63252514e8a0")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="3049111e-08ee-47e9-a8e5-4416e8a4d8b7")>]
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="c7457b6e-d747-474f-8b5d-13f36df73638")>
+1
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="dc2a3fb8-8b2e-41fb-a7c7-f3c10fcab9a5")>
+2
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="675ed084-0aaa-4461-a473-0c3f38da19c5")>
+3
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="89d73631-e90c-4f4b-b234-39e812c423c1")>
+4
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="ee3a2137-c4b3-44df-9d13-2f931b10f188")>
+5
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="75c71546-52cd-407b-bba4-cbd824584273")>
+6
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="2cdf48f7-7a4b-4c5d-9a85-fc42e5da3c31")>
+7
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="84cbd82e-073e-4443-99a4-e6bd03aa4758")>
+8
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="22e8a243-6fd2-433c-87ea-7d05401e3d58")>
+9
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="57a34286-808d-4089-9bf8-036e9b64f3b7")>
+10
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="38e726b0-b2a0-4981-8b3a-a92a792fa69b")>
+11
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="014efdff-8ea6-4149-b8fc-90f9b79ef7c1")>
+12
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="c9d58416-5d3d-4129-a203-19754c2d4703")>
+13
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="1e3a832d-b8e2-4bbe-872e-319b70e06445")>
+14
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="114bace3-d4e0-4dcb-b8c9-c95ac7c72215")>
+15
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="52e4a395-f9db-49a7-b9ec-9ff4aa0cbf95")>
+16
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="9cf0e716-4b5b-49fb-9e09-96e020c59e19")>
+17
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="e1fb84a8-ee98-4064-9410-e494c68b7837")>
+18
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="6ac6db99-f412-4a85-8e0a-2788cb1c70a6")>
+19
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="ad1714da-dea1-4401-8ab0-21046c4725ae")>
+20
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="48bef7f5-afad-4cd9-bac1-7ef665e5d2a2", element="c7457b6e-d747-474f-8b5d-13f36df73638")>
+il video con id=ucRvNKhdsF8 durera'295.0s
