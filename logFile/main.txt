@@ -24,3 +24,243 @@ Sessioni ready da eseguire: 0
 
 
 
+Ora esecuzione: 2021-01-12 23:43:36.130891
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+1610491416.1480043
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-12 23:44:36.194503
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+1610491476.1964965
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-12 23:48:02.986560
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+1610491682.998555
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-12 23:49:03.047693
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+1610491743.0516827
+Sessioni ready da eseguire: 2
+
+
+
+emailperlatesi@gmail.com
+1610491743.1713665
+Ora esecuzione: 2021-01-12 23:51:37.478287
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+1610491897.4893577
+Sessioni ready da eseguire: 1
+
+
+
+emailperlatesi@gmail.com
+1610491897.6441772
+Ora esecuzione: 2021-01-12 23:52:15.733455
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+1610491935.7434447
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-12 23:53:15.783691
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 2
+
+emailperlatesi@gmail.com
+1610491995.7940495
+emailperlatesi@gmail.com
+1610491996.167136
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-12 23:54:48.055077
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 2
+
+emailperlatesi@gmail.com
+1610492088.0660498
+emailperlatesi@gmail.com
+1610492088.203291
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-12 23:55:54.837206
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 2
+
+emailperlatesi@gmail.com
+1610492155.1776502
+emailperlatesi@gmail.com
+1610492155.3320038
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-12 23:56:51.519341
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-12 23:57:48.223594
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+1610492268.2345572
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:08:49.800892
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:12:34.219935
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:13:34.259905
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:15:19.158283
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:16:18.613203
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:17:05.399984
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:18:05.381348
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:19:05.425795
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:20:06.294865
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:20:42.138858
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:21:35.576190
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 1
+
+
+
+<class 'dict'>
+Ora esecuzione: 2021-01-13 00:22:36.155390
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+

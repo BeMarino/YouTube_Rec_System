@@ -1,9 +1,8 @@
 Traceback (most recent call last):
-  File "exploreByNext.py", line 76, in <module>
-    exec(open("fillUpDb.py").read(),{"account":setup['account'],"tipo":2,"idSetup":setup['id']})
-  File "<string>", line 57, in <module>
-KeyboardInterrupt
-ment_by_id("contents").find_elements_by_id("content")
+  File "exploreByNext.py", line 42, in <module>
+    watched=lib.getHomeVideosId(driver,session,setup['id'])
+  File "D:\Benny\università\Tesi\lib.py", line 93, in getHomeVideosId
+    videos=driver.find_element_by_id("contents").find_elements_by_id("content")
   File "C:\Users\Benny\AppData\Local\Programs\Python\Python38-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 360, in find_element_by_id
     return self.find_element(by=By.ID, value=id_)
   File "C:\Users\Benny\AppData\Local\Programs\Python\Python38-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 976, in find_element
@@ -12,5 +11,5 @@ ment_by_id("contents").find_elements_by_id("content")
     self.error_handler.check_response(response)
   File "C:\Users\Benny\AppData\Local\Programs\Python\Python38-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
     raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.WebDriverException: Message: TypeError: BrowsingContext.getFromWindow: Argument 1 does not implement interface WindowProxy.
+selenium.common.exceptions.WebDriverException: Message: TypeError: browsingContextFn().currentWindowGlobal is null
 

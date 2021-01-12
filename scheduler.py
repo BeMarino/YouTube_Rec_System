@@ -1,4 +1,5 @@
 import time
+import subprocess
 while 1:
-    exec(open("main.py").read())
+    subprocess.Popen(['python', 'main.py'])
     time.sleep(60)

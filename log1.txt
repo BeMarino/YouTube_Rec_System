@@ -1,0 +1,2 @@
+{"id": 22, "account": "emailperlatesi@gmail.com", "tipo": 1, "query": "Vaccino", "steps": 2, "viewTime": 15, "status": "ongoing", "frequency": "0", "iterations": 20, "executedTimes": 17, "lastExecution": "1610491935"}
+<class 'dict'>

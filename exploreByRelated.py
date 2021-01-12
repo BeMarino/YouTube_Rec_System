@@ -75,7 +75,7 @@ time.sleep(5)
 driver.close()
 
 #------Una volta terminati i passi avvio la procedura per inserire i dati relativi ai video e alla sessione nel database------- 
-lib.setSessionEndTime(setup['id'])
+lib.setSessionEndTime(setup['id'],,setup["startedAtTime"])
 print("Id sessione:"+setup['id'])
 exec(open("fillUpDb.py").read(),{"account":setup['account'],"tipo":2,"idSetup":setup['id']})
 

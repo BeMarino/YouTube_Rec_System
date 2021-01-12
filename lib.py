@@ -43,12 +43,6 @@ def isInDb(video_id,cursor):
     else:
         return 0
 
-def setSessionEndTime(setupId):
-   query=" update sessione set finishedAt=%s where id=(select max(id) where setupId=%s )"
-   connection=create_connection("localhost","root","","Tesi")
-   cursor=connection.cursor()
-   cursor.execute(query,[time.time(),setupId])
-   connection.commit()
 
 def getSuggestedTimes(video_id,cursor):
     cursor.execute("select suggested_times from video where id=%s",[video_id])
@@ -242,7 +236,15 @@ def aggiorna_setupsessione(setup,connection,cursor):
         
         cursor.execute(query_setup,[setup['executedTimes']+1,"completed",timestamp,setup['id']])
     else:
-        cursor.execute(query_setup,[setup['executedTimes']+1,"ongoing",timestamp,setup['id']])
-    print(time.time())
-    cursor.execute("INSERT INTO sessione(setupId,startedAt) VALUES(%s,%s)",[setup['id'],time.time()])
+        cursor.execute(query_setup,[setup['executedTimes']+1,"In progress",timestamp,setup['id']])
+    
     connection.commit()
+    return timestamp
+
+def setSessionEndTime(setupId,startedAtTimestamp):
+   query="INSERT INTO sessione(setupId,startedAt,finishedAt) VALUES(%s,%s,%s)"
+   connection=create_connection("localhost","root","","Tesi")
+   cursor=connection.cursor()
+   cursor.execute(query,[setupId,startedAtTimestamp,time.time()])
+   cursor.execute("update setupsessione set satus=ongoing where status != completed and id=%s",[setupId])
+   connection.commit()

@@ -1,0 +1,2 @@
+{"id": 23, "account": "emailperlatesi@gmail.com", "tipo": 1, "query": "Trump", "steps": 20, "viewTime": 15, "iterations": 10, "executedTimes": 0, "startedAtTime": "1610493695"}
+<class 'dict'>

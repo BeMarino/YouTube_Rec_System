@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "exploreByNext.py", line 34, in <module>
+    lib.login(driver,setup['account'],password)
+  File "D:\Benny\università\Tesi\lib.py", line 76, in login
+    elem =wait.until(cond.element_to_be_clickable((By.ID,"action-button")))
+  File "C:\Users\Benny\AppData\Local\Programs\Python\Python38-32\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "C:\Users\Benny\AppData\Local\Programs\Python\Python38-32\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 297, in __call__
+    element = visibility_of_element_located(self.locator)(driver)
+  File "C:\Users\Benny\AppData\Local\Programs\Python\Python38-32\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 128, in __call__
+    return _element_if_visible(_find_element(driver, self.locator))
+  File "C:\Users\Benny\AppData\Local\Programs\Python\Python38-32\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 415, in _find_element
+    raise e
+  File "C:\Users\Benny\AppData\Local\Programs\Python\Python38-32\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "C:\Users\Benny\AppData\Local\Programs\Python\Python38-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\Benny\AppData\Local\Programs\Python\Python38-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Benny\AppData\Local\Programs\Python\Python38-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: TypeError: browsingContextFn().currentWindowGlobal is null
+
