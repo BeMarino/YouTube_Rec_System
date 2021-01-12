@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "exploreByNext.py", line 75, in <module>
-    exec(open("fillUpDb.py").read(),{"account":account,"tipo":1,"query":query,"idSetup":idSetup})
-NameError: name 'account' is not defined

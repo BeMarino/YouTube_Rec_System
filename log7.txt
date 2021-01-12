@@ -1,2 +1,0 @@
-{"id": 19, "account": "emailperlatesi@gmail.com", "tipo": 1, "query": "Sbarco  migranti", "steps": 10, "viewTime": 120, "status": "ongoing", "frequency": "3600", "iterations": 10, "executedTimes": 3, "lastExecution": ""}
-<class 'dict'>

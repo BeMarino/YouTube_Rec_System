@@ -212,37 +212,37 @@ def getDataFromDb(query):
 
 #-----Ritorna tutte le sessioni ongoing che devono essere rieseguite----------
 def checkForOngoing(connection,cursor):
-    ongoing_query="select * from setupsessione where status='ongoing' and "+str(time.time())+"-lastExecution>frequency limit 1"
+    ongoing_query="select * from setupsessione where status='ongoing' and "+str(time.time())+"-lastExecution>frequency "
     cursor.execute(ongoing_query)
 
     #---Creo un dizionario che ha come chiavi i nomi delle colonne del db e come valori i dati presenti all'interno della tabella----
     desc = cursor.description
     column_names = [col[0] for col in desc]
     setup_list = [dict(zip(column_names, row))  for row in cursor.fetchall()]
-    print ("Carico i setup ongoing da eseguire\n")
-  
+   
     return setup_list
 
 def checkForReady(connection,cursor):
-    query="select id,account,tipo,query,steps,viewTime,iterations,executedTimes from setupsessione where status='ready' limit 1 "
+    query="select id,account,tipo,query,steps,viewTime,iterations,executedTimes from setupsessione where status='ready'"
     cursor.execute(query)
 
     #---Creo un dizionario che ha come chiavi i nomi delle colonne del db e come valori i dati presenti all'interno della tabella----
     desc = cursor.description
     column_names = [col[0] for col in desc]
     setup_list = [dict(zip(column_names, row))  for row in cursor.fetchall()]
-    print ("Carico i setup ready da eseguire\n")
+    
     
     return setup_list
     
 def aggiorna_setupsessione(setup,connection,cursor):
-    query_setup="update setupsessione set executedTimes=%s, status=%s where id=%s"
-
+    query_setup="update setupsessione set executedTimes=%s, status=%s, lastExecution=%s where id=%s"
+    timestamp=str(time.time())
+    timestamp=timestamp[0:timestamp.index(".")]
     if(setup['iterations']-setup['executedTimes']<=1):  
         
-        cursor.execute(query_setup,[setup['executedTimes']+1,"completed",setup['id']])
+        cursor.execute(query_setup,[setup['executedTimes']+1,"completed",timestamp,setup['id']])
     else:
-        cursor.execute(query_setup,[setup['executedTimes']+1,"ongoing",setup['id']])
+        cursor.execute(query_setup,[setup['executedTimes']+1,"ongoing",timestamp,setup['id']])
     print(time.time())
     cursor.execute("INSERT INTO sessione(setupId,startedAt) VALUES(%s,%s)",[setup['id'],time.time()])
     connection.commit()

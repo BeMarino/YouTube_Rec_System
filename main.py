@@ -5,7 +5,12 @@ from multiprocessing import Process
 import subprocess
 import time
 import json
+import sys
+from datetime import datetime
 
+sys.stdout=open("logFile/main.txt","a+")
+
+print("Ora esecuzione: "+str(datetime.now())+"\n")
 
 #-------connessione al database------------
 connection= create_connection("localhost","root","","tesi")
@@ -17,6 +22,7 @@ method={1:"exploreByNext.py",2:"exploreByRelated.py"}#dizionario utilizzato per 
 #----Query utilizzata per estrarre una configurazione pronta per essere eseguita-----
 setup_list=checkForOngoing(connection,cursor)
 i=0
+print("Sessioni ongoing da eseguire: "+str(len(setup_list))+"\n")
 for setup in setup_list:
    
     print(setup['account'])
@@ -26,6 +32,15 @@ for setup in setup_list:
     p=subprocess.Popen(['python', method[setup['tipo']]]+[json.dumps(setup)],stdout=open("log"+str(i)+".txt","w"),stderr=open("err_log"+str(i)+".txt","w"))
     i+=1
     #exec(open(method[setup['tipo']]).read(),{'account':setup['account'],'query':setup['query'],'tempo_osservazione':setup['viewTime'],'steps':setup['steps'],'idSetup':setup['id']})
-    #---------/Estrazione configurazione dal DB e avvio procedura-----------
-#for setup in setup_list:   
-    #setup_list=checkForReady(connection,cursor)
+setup_list=checkForReady(connection,cursor)
+i=0
+print("Sessioni ready da eseguire: "+str(len(setup_list))+"\n\n\n")
+for setup in setup_list:
+   
+    print(setup['account'])
+    
+    #Process(target=exec(opern))
+    aggiorna_setupsessione(setup,connection,cursor)
+    p=subprocess.Popen(['python', method[setup['tipo']]]+[json.dumps(setup)],stdout=open("logFile/log"+str(i)+".txt","w"),stderr=open("errorLogFile/err_log"+str(i)+".txt","w"))
+    i+=1
+    #exec(open(method[setup['tipo']]).read(),{'account':setup['account'],'query':setup['query'],'tempo_osservazione':setup['viewTime'],'steps':setup['steps'],'idSetup':setup['id']})

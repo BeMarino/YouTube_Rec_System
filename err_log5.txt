@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "exploreByNext.py", line 56, in <module>
-    next_video=lib.getNextVideo(driver,session,currentVideoId,setup['viewTime'],setup['idSetup'])
-KeyError: 'idSetup'

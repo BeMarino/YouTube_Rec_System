@@ -1,0 +1,26 @@
+Ora esecuzione: 2021-01-12 23:07:12.038549
+
+Connection to MySQL DB successful
+Carico i setup ongoing da eseguire
+
+Sessioni ongoing da eseguire1
+
+emailperlatesi@gmail.com
+1610489232.0485222
+Carico i setup ready da eseguire
+
+Sessioni ready da eseguire0
+
+
+
+Ora esecuzione: 2021-01-12 23:30:00.367785
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+1610490600.3777273
+Sessioni ready da eseguire: 0
+
+
+
