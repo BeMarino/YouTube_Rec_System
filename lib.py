@@ -246,5 +246,5 @@ def setSessionEndTime(setupId,startedAtTimestamp):
    connection=create_connection("localhost","root","","Tesi")
    cursor=connection.cursor()
    cursor.execute(query,[setupId,startedAtTimestamp,time.time()])
-   cursor.execute("update setupsessione set satus=ongoing where status != completed and id=%s",[setupId])
+   cursor.execute("update setupsessione set satus=%s where status !=%s  and id=%s",["ongoing","completed",setupId])
    connection.commit()

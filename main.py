@@ -29,7 +29,8 @@ for setup in setup_list:
     print(setup['account'])
     
     #Process(target=exec(opern))
-    aggiorna_setupsessione(setup,connection,cursor)
+    startedAtTime=aggiorna_setupsessione(setup,connection,cursor)
+    setup["startedAtTime"]=startedAtTime
     p=subprocess.Popen(['python', method[setup['tipo']]]+[json.dumps(setup)],stdout=open("logFile/log"+str(i)+".txt","w"),stderr=open("errorLogFile/err_log"+str(i)+".txt","w"))
     i+=1
     #exec(open(method[setup['tipo']]).read(),{'account':setup['account'],'query':setup['query'],'tempo_osservazione':setup['viewTime'],'steps':setup['steps'],'idSetup':setup['id']})
@@ -39,8 +40,8 @@ print("Sessioni ready da eseguire: "+str(len(setup_list))+"\n\n\n")
 for setup in setup_list:
     print(type(setup))
     #Process(target=exec(opern))
-    startedTime=aggiorna_setupsessione(setup,connection,cursor)
-    setup["startedAtTime"]=startedTime
+    startedAtTime=aggiorna_setupsessione(setup,connection,cursor)
+    setup["startedAtTime"]=startedAtTime
     p=subprocess.Popen(['python', method[setup['tipo']]]+[json.dumps(setup)],stdout=open("logFile/log"+str(i)+".txt","w"),stderr=open("errorLogFile/err_log"+str(i)+".txt","w"))
     i+=1
     #exec(open(method[setup['tipo']]).read(),{'account':setup['account'],'query':setup['query'],'tempo_osservazione':setup['viewTime'],'steps':setup['steps'],'idSetup':setup['id']})
