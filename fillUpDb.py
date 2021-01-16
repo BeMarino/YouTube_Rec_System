@@ -19,7 +19,7 @@ def deEmojify(text):
                            "]+", flags = re.UNICODE)
     return regrex_pattern.sub(r'',text)
 
-accountList=["emailperlatesi@gmail.com","emailperlatesi2@gmail.com"]
+accountList=["emailperlatesi@gmail.com","emailperlatesi3@gmail.com"]
 files=["next_exploration.csv","by_related_exploration.csv"]
 api_key="AIzaSyCWH5-fbx-6X4GHB3fc291PdVOBCyYOQGQ"
 youtube = googleapiclient.discovery.build("youtube", "v3", developerKey=api_key)

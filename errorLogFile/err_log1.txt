@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "exploreByNext.py", line 40, in <module>
-    with open("results/"+setup['account']+"/next_exploration.csv","a+",newline='') as session:
-FileNotFoundError: [Errno 2] No such file or directory: 'results/emailperlatesi3@gmail.com/next_exploration.csv'

@@ -1,0 +1,417 @@
+{"id": 32, "account": "emailperlatesi@gmail.com", "tipo": 1, "query": "tamponi", "steps": 15, "viewTime": 120, "iterations": 2, "executedTimes": 0, "startedAtTime": "1610732676"}
+<class 'dict'>
+elemento non trovato
+0
+https://www.youtube.com/watch?v=KhMlfCO0gs0
+1
+https://www.youtube.com/watch?v=UyORQ51wEe8&t=742s
+2
+https://www.youtube.com/watch?v=L4vAqXILHOg
+3
+https://www.youtube.com/watch?v=s90vrzU3zM8
+4
+https://www.youtube.com/watch?v=Oxd-RvZJpDk
+5
+https://www.youtube.com/watch?v=sRcSvi2PWGE
+6
+https://www.youtube.com/watch?v=FLP5hyYPmJM
+7
+https://www.youtube.com/watch?v=Qe8Qf6ge4vA
+8
+https://www.youtube.com/watch?v=6Wbu_82PF2I
+9
+https://www.youtube.com/watch?v=6d71jz3kTrE
+10
+https://www.youtube.com/watch?v=XEG5o0GAvbE
+11
+https://www.youtube.com/watch?v=MQpVdLdvzIk
+12
+https://www.youtube.com/watch?v=MQpVdLdvzIk
+13
+https://www.youtube.com/watch?v=F6X0pAsGPH8
+14
+https://www.youtube.com/watch?v=JRstwSGI1Lw
+15
+https://www.youtube.com/watch?v=KJtKpmrKrzs
+16
+https://www.youtube.com/watch?v=z36S-oj2AmE
+17
+https://www.youtube.com/watch?v=fdWe9wEEbyM
+18
+https://www.youtube.com/watch?v=0vzuDkjtDOY
+19
+https://www.youtube.com/watch?v=Rc-5lMlOUJY
+20
+[<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="6bb27f63-7ce4-473e-a3eb-1f61fd56662b")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="40e5c840-3503-4e04-be87-7d606f11ece2")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="438e1daf-4979-4703-822e-22a4095ca697")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="e51b3726-7305-4946-bfad-4ed3109e7d1c")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="c7a9e44c-5c6f-4644-891a-680c3856dcb2")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="b3864603-d539-4a5e-8027-84c96b34e8ed")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="34f355b8-1d85-4ea0-8f74-b432b2f81cd3")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="d9113670-bb78-49f4-af19-6becc830c882")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="c2d4fb91-5140-4012-a6eb-e453234c7fc9")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="fb1e8f62-364f-4ec4-bbfc-5b35bea7440c")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="27a5b798-a6ba-4087-83bf-2962a4010680")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="54d5b660-7baf-495c-a349-b6fb464858ac")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="3017feae-c651-495e-ae66-16f0732b332a")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="d7f7dc1c-6f83-4cbf-b59b-5d2634d1d942")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="8d748d9a-94a8-47be-99e3-62a4fb307322")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="145b9afb-133a-445d-8ed1-a4a30a8cee25")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="2b40a2ad-e61b-476d-a7ab-4694c00be769")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="6c0cbb9b-5909-4674-aabb-ea7b548c75bc")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="2d73758d-a760-43af-ad56-b988d2ad1f98")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="162dcba5-44f7-4fac-9f66-4b870ef7bd40")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="6c03683a-743b-4542-869b-166221c05727")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="4c074f13-b678-4c55-a38c-6635bcb1e8b0")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="6627ddf2-8a85-422e-a7e3-c7ebb1487536")>, <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="116b7d02-8e3d-4325-809c-ea78a56a1d7c")>]
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="6bb27f63-7ce4-473e-a3eb-1f61fd56662b")>
+1
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="40e5c840-3503-4e04-be87-7d606f11ece2")>
+2
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="438e1daf-4979-4703-822e-22a4095ca697")>
+3
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="e51b3726-7305-4946-bfad-4ed3109e7d1c")>
+4
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="c7a9e44c-5c6f-4644-891a-680c3856dcb2")>
+5
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="b3864603-d539-4a5e-8027-84c96b34e8ed")>
+6
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="34f355b8-1d85-4ea0-8f74-b432b2f81cd3")>
+7
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="d9113670-bb78-49f4-af19-6becc830c882")>
+8
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="c2d4fb91-5140-4012-a6eb-e453234c7fc9")>
+9
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="fb1e8f62-364f-4ec4-bbfc-5b35bea7440c")>
+10
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="27a5b798-a6ba-4087-83bf-2962a4010680")>
+11
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="54d5b660-7baf-495c-a349-b6fb464858ac")>
+12
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="3017feae-c651-495e-ae66-16f0732b332a")>
+13
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="d7f7dc1c-6f83-4cbf-b59b-5d2634d1d942")>
+14
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="8d748d9a-94a8-47be-99e3-62a4fb307322")>
+15
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="145b9afb-133a-445d-8ed1-a4a30a8cee25")>
+16
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="2b40a2ad-e61b-476d-a7ab-4694c00be769")>
+17
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="6c0cbb9b-5909-4674-aabb-ea7b548c75bc")>
+18
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="2d73758d-a760-43af-ad56-b988d2ad1f98")>
+19
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="162dcba5-44f7-4fac-9f66-4b870ef7bd40")>
+20
+<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="9113fdbe-0d80-497c-a4d5-a8af1438a7f2", element="6bb27f63-7ce4-473e-a3eb-1f61fd56662b")>
+il video con id=27afYPRavpY durera'96.0s
+https://www.youtube.com/watch?v=dPFjhx98Tjo
+20
+q8OSrwwRrE0
+g3jYwQkn6BU
+syXd7kgLSN8
+LtfjgVSBltE
+J3Dp9EnTt5U
+BLV-0Ej_s1k
+9WayjX6vCdk
+xc0-pleVOcg
+k1GZo1Qc-Os
+ThG_02miq-4
+2HkKdaGswHM
+JmSXo0XdWoA
+zxqS-XdQsYg
+psl3beX-uyg
+DSrWjVyxEeg
+cbnJ4QawrPg
+exxGLVK77LM
+QGpOA02773U
+H0OEYm29UCo
+il video con id=dPFjhx98Tjo durera'309.0s
+https://www.youtube.com/watch?v=syXd7kgLSN8
+20
+q8OSrwwRrE0
+psl3beX-uyg
+g3jYwQkn6BU
+GDZCrFbcfuQ
+1H759HE7y50
+xc0-pleVOcg
+MoGuH3JbMPw
+DR0iEbK3zDQ
+2HvWtg93f8g
+J3Dp9EnTt5U
+SEEYEDMug8E
+9WayjX6vCdk
+AC6KRdKOKeI
+8T-RjIrl0f0
+MHIK4GFO3g8
+fhShfC0Eczo
+gMUbLvtgLps
+H4FF-PCDhVw
+5DGwOJXSxqg
+il video con id=syXd7kgLSN8 durera'235.0s
+https://www.youtube.com/watch?v=SEEYEDMug8E
+20
+ThG_02miq-4
+pzgUbyD6mCM
+l0F3DZ-ieDs
+PWzbArPgo-o
+1H759HE7y50
+ndMrEMyRgQM
+9WayjX6vCdk
+q8OSrwwRrE0
+5DGwOJXSxqg
+U8r3oTVMtQ0
+psl3beX-uyg
+HCJt4YcgfHA
+jaB9M8B_Tuw
+DSrWjVyxEeg
+J3Dp9EnTt5U
+uWGTciX795o
+mHuiYAPoEw0
+X3TAROotFfM
+14mRmD8zHOk
+il video con id=SEEYEDMug8E durera'180.0s
+https://www.youtube.com/watch?v=DSrWjVyxEeg
+20
+1H759HE7y50
+9WayjX6vCdk
+vN30emwcNS4
+K09xzIQ8zsg
+sQwheE7wJZY
+GDZCrFbcfuQ
+ZvqjkbD-moA
+ZuJzYYIS9c4
+JmSXo0XdWoA
+U8r3oTVMtQ0
+mjcsf3JR92M
+ha2mLz-Xdpg
+Qi0edf_nJDo
+q8OSrwwRrE0
+uWGTciX795o
+VAR44vnxWis
+J3Dp9EnTt5U
+ndMrEMyRgQM
+mHuiYAPoEw0
+il video con id=DSrWjVyxEeg durera'85.0s
+https://www.youtube.com/watch?v=9WayjX6vCdk
+20
+psl3beX-uyg
+Abf3Gd6AaZQ
+iDTjD3gMVjI
+elobb1BxXTk
+GDZCrFbcfuQ
+ar2Grm_t8X8
+1H759HE7y50
+sQwheE7wJZY
+q8OSrwwRrE0
+WqT2z8jCEHs
+uWGTciX795o
+AhC6_JXagxE
+X5QYsxdFLkI
+HJsKFGUE-Ak
+J7lLZEZ6u_w
+Y1_isCwwJrk
+27afYPRavpY
+AqvIoK3UuMo
+14mRmD8zHOk
+il video con id=9WayjX6vCdk durera'134.0s
+https://www.youtube.com/watch?v=ha2mLz-Xdpg
+20
+HSTodMEqxOM
+sQwheE7wJZY
+NVsrexn3pT8
+J3Dp9EnTt5U
+elobb1BxXTk
+U8r3oTVMtQ0
+ZvqjkbD-moA
+GDZCrFbcfuQ
+X5QYsxdFLkI
+uWGTciX795o
+Qe8Qf6ge4vA
+7g02s7EKybE
+WqT2z8jCEHs
+ozzZVQQTvo4
+rUm7a8ZeW2M
+FuhHfxjxATc
+7yiBP5gmUdk
+I0TmBsHaGmI
+y_wK2HjEyo4
+il video con id=ha2mLz-Xdpg durera'3624.0s
+https://www.youtube.com/watch?v=9AThycGCakk
+20
+JmSXo0XdWoA
+HCJt4YcgfHA
+hapSlAP2xrc
+5DGwOJXSxqg
+FrMVRGuYxXw
+B4UYaumLy90
+aj7R6-iEVNE
+8tu9gQ7Eb7I
+7sQCmgCmN7U
+9eSMWX8FVpc
+oL7F3h5joEE
+_hb-kP66_rQ
+QyvWxobqKrc
+neqi8l_-ALY
+U8r3oTVMtQ0
+7zakDUZHSrM
+RMTRMPH9ByA
+DZaA_OrLsaw
+T43753AfaKY
+il video con id=9AThycGCakk durera'810.0s
+https://www.youtube.com/watch?v=1bumPyvzCyo
+20
+9AThycGCakk
+WX_08zcCmx8
+SOS_FVp5yaE
+FrMVRGuYxXw
+t0pFZOkF70M
+N6zqatiur3A
+gyEqm1K20Rc
+aDh7mektWtQ
+Kn3uZ6-jSWI
+vN1QHyYjxX0
+IKiYIfu8xRg
+rtkAFn9RWJc
+SOqVzbxYS5A
+_4Q4uYX-2MU
+fEr-2W39_GU
+1afOz5recUg
+Iu4si9ZxjXc
+arj7oStGLkU
+7tqypS2cm0g
+il video con id=1bumPyvzCyo durera'601.0s
+https://www.youtube.com/watch?v=_NRRRBxcq5Y
+20
+1bumPyvzCyo
+r7-qE0eGZnE
+EDWtH_hQM3U
+-mp-ttAXW4w
+FrMVRGuYxXw
+3sK3wJAxGfs
+TAz8O7IQE2w
+xc0-pleVOcg
+xpyrefzvTpI
+xmMU1OuWJao
+k9zTr2MAFRg
+quprjSrwukM
+llTCmgGyHEs
+N6zqatiur3A
+F1v4o646SsA
+LUllIT8rCj4
+YtD_AnEDYEs
+hsbUqNp-dI0
+is5mJJFKMqQ
+il video con id=_NRRRBxcq5Y durera'288.0s
+https://www.youtube.com/watch?v=3sK3wJAxGfs
+20
+xpyrefzvTpI
+8SN9Kj8SdgE
+HTmHtOSqHTk
+-mp-ttAXW4w
+1W3A2hQhdg4
+6Wbu_82PF2I
+BXyfCGDnuWs
+b-LTA85deuk
+90UgQ1vYi0Y
+6LbmDpe190Y
+Bg_Q7KYWG1g
+LUllIT8rCj4
+kzSBrJmXqdg
+EBGb40yh4SY
+_u2qggffbYM
+MBchdYVDvDw
+DjxhenAHyGk
+bm-cCn0uRXQ
+RxSzfaBWfgo
+il video con id=3sK3wJAxGfs durera'361.0s
+https://www.youtube.com/watch?v=k9zTr2MAFRg
+20
+3sK3wJAxGfs
+LVtn9Z1uuOo
+-S_XE0mdU3Q
+WX_08zcCmx8
+nmfaiUveCI8
+wD2cVhC-63I
+DjxhenAHyGk
+v5FiMHQqMT4
+ipLBjxbRSyQ
+UTAy50V551c
+TAz8O7IQE2w
+H7P7AB7dEFY
+F1v4o646SsA
+iKB1OeSR2f8
+BuGkId2iKNM
+T8kqEaxTBpw
+JunFh2J6e4c
+WbliHNs4q14
+Jd10x8LiuBc
+il video con id=k9zTr2MAFRg durera'433.0s
+https://www.youtube.com/watch?v=8SN9Kj8SdgE
+20
+k9zTr2MAFRg
+-8PfckZIZ44
+sX1Y2JMK6g8
+FLP5hyYPmJM
+MewROa1EU_o
+G8zhIjYsZo8
+-mp-ttAXW4w
+N6zqatiur3A
+xpyrefzvTpI
+yN0xxlPQOlM
+LVtn9Z1uuOo
+fAz8rLQmbKw
+WxuYzYDM1EA
+ANCAyz_U_oo
+azq0S0DKS50
+xmMU1OuWJao
+TAz8O7IQE2w
+eXQ70FO7_mY
+O-YE70WUXhM
+il video con id=8SN9Kj8SdgE durera'351.0s
+https://www.youtube.com/watch?v=rSDy5AdfRDI
+20
+LR7BJmxCuSQ
+2mh_ZICm-EU
+MewROa1EU_o
+h-1B_wf_xyw
+BQcp1ZNWgTs
+ScdgaIw2BDQ
+WX_08zcCmx8
+PU2urhDP4SY
+ArSY05GXLrw
+4tG5KdJKRbk
+b4zuLkZGM-Y
+7222tn_0UOA
+LVtn9Z1uuOo
+p8eFl-WVJPY
+NrGWmrmXfFo
+v5FiMHQqMT4
+bheHjqvkaaI
+g25jcvtjZjA
+sSmhzgi1KjE
+il video con id=rSDy5AdfRDI durera'300.0s
+https://www.youtube.com/watch?v=b-LTA85deuk
+20
+-8PfckZIZ44
+XQvJWfnutnc
+xmMU1OuWJao
+bheHjqvkaaI
+N6Mgy8Jxj8w
+azq0S0DKS50
+cwYKD8nCWjo
+hNpF7eNMllg
+zvtgFb1BLOM
+b4zuLkZGM-Y
+jPX9uBYP1tY
+WsQD0quPFRY
+Az3LtBz8G5M
+40yqDWiEr_g
+-KKqQQB4a0Q
+bXGhtjezJPY
+3QAUFRhI6SI
+DjxhenAHyGk
+7AZ-jmz9-_Q
+il video con id=b-LTA85deuk durera'267.0s
+https://www.youtube.com/watch?v=DjxhenAHyGk
+20
+4tG5KdJKRbk
+b-LTA85deuk
+Tfcw46r9JSc
+Qe8Qf6ge4vA
+MewROa1EU_o
+yYbVzY9ASJA
+_u2qggffbYM
+azq0S0DKS50
+zvtgFb1BLOM
+FLP5hyYPmJM
+RaWuD64SOvI
+9RwssHkh_RA
+lgYv6fwfMPE
+bheHjqvkaaI
+r9tWd1qiDBs
+jPX9uBYP1tY
+7222tn_0UOA
+YfoRl8G4x5I
+LVtn9Z1uuOo
+Connection to MySQL DB successful

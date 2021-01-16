@@ -1,2 +1,0 @@
-{"id": 24, "account": "emailperlatesi3@gmail.com", "tipo": 1, "query": "vaccini", "steps": 10, "viewTime": 120, "iterations": 10, "executedTimes": 0, "startedAtTime": "1610660906"}
-<class 'dict'>

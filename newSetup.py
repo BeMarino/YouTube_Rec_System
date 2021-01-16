@@ -28,7 +28,7 @@ def save(account,method,steps,time,query,iterations,frequency,gradeFrequency):
     connection.commit()
     
 
-accountList={" Account iscritto ad alcuni canali":"emailperlatesi@gmail.com"," Account pulito":"emailperlatesi2@gmail.com"}
+accountList={" Account iscritto ad alcuni canali":"emailperlatesi@gmail.com"," Account pulito":"emailperlatesi3@gmail.com"}
 
 methodList={" Per successivo":1," Tutti i correlati":2}
 
