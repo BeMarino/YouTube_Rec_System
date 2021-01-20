@@ -1,0 +1,1366 @@
+Ora esecuzione: 2021-01-12 23:07:12.038549
+
+Connection to MySQL DB successful
+Carico i setup ongoing da eseguire
+
+Sessioni ongoing da eseguire1
+
+emailperlatesi@gmail.com
+1610489232.0485222
+Carico i setup ready da eseguire
+
+Sessioni ready da eseguire0
+
+
+
+Ora esecuzione: 2021-01-12 23:30:00.367785
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+1610490600.3777273
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-12 23:43:36.130891
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+1610491416.1480043
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-12 23:44:36.194503
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+1610491476.1964965
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-12 23:48:02.986560
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+1610491682.998555
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-12 23:49:03.047693
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+1610491743.0516827
+Sessioni ready da eseguire: 2
+
+
+
+emailperlatesi@gmail.com
+1610491743.1713665
+Ora esecuzione: 2021-01-12 23:51:37.478287
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+1610491897.4893577
+Sessioni ready da eseguire: 1
+
+
+
+emailperlatesi@gmail.com
+1610491897.6441772
+Ora esecuzione: 2021-01-12 23:52:15.733455
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+1610491935.7434447
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-12 23:53:15.783691
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 2
+
+emailperlatesi@gmail.com
+1610491995.7940495
+emailperlatesi@gmail.com
+1610491996.167136
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-12 23:54:48.055077
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 2
+
+emailperlatesi@gmail.com
+1610492088.0660498
+emailperlatesi@gmail.com
+1610492088.203291
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-12 23:55:54.837206
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 2
+
+emailperlatesi@gmail.com
+1610492155.1776502
+emailperlatesi@gmail.com
+1610492155.3320038
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-12 23:56:51.519341
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-12 23:57:48.223594
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+1610492268.2345572
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:08:49.800892
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:12:34.219935
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:13:34.259905
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:15:19.158283
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:16:18.613203
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:17:05.399984
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:18:05.381348
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:19:05.425795
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:20:06.294865
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:20:42.138858
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:21:35.576190
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 1
+
+
+
+<class 'dict'>
+Ora esecuzione: 2021-01-13 00:22:36.155390
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:23:35.563606
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:24:34.094375
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:25:34.362199
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:27:47.579721
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 2
+
+emailperlatesi@gmail.com
+emailperlatesi@gmail.com
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:28:51.579671
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:29:48.402791
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:30:48.182283
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:31:48.270038
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:32:47.670032
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:33:47.667870
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-13 00:34:48.188496
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 2
+
+emailperlatesi@gmail.com
+Ora esecuzione: 2021-01-13 00:35:48.303149
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+Ora esecuzione: 2021-01-13 00:37:19.956335
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 2
+
+emailperlatesi@gmail.com
+Ora esecuzione: 2021-01-13 00:38:19.659173
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+Ora esecuzione: 2021-01-13 00:39:19.670217
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-14 22:23:55.492535
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 2
+
+emailperlatesi@gmail.com
+Ora esecuzione: 2021-01-14 22:24:52.692248
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+Ora esecuzione: 2021-01-14 22:27:06.290927
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 1
+
+
+
+<class 'dict'>
+Ora esecuzione: 2021-01-14 22:28:38.570370
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-14 22:29:17.816393
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-14 22:29:48.412768
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-14 22:32:01.996715
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+Ora esecuzione: 2021-01-14 22:33:00.598204
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-14 22:34:30.264909
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 1
+
+
+
+<class 'dict'>
+Ora esecuzione: 2021-01-14 22:35:17.095026
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+Sessioni ready da eseguire: 1
+
+
+
+<class 'dict'>
+Ora esecuzione: 2021-01-14 22:38:16.259408
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+Sessioni ready da eseguire: 1
+
+
+
+<class 'dict'>
+Ora esecuzione: 2021-01-14 22:41:43.723749
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+Sessioni ready da eseguire: 1
+
+
+
+<class 'dict'>
+Ora esecuzione: 2021-01-14 22:47:50.868068
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-14 22:48:26.116678
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 2
+
+
+
+<class 'dict'>
+<class 'dict'>
+Ora esecuzione: 2021-01-14 22:49:41.739880
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 1
+
+
+
+<class 'dict'>
+Ora esecuzione: 2021-01-14 22:51:09.029537
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 1
+
+
+
+<class 'dict'>
+Ora esecuzione: 2021-01-15 18:44:35.938926
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 8
+
+
+
+<class 'dict'>
+<class 'dict'>
+<class 'dict'>
+<class 'dict'>
+<class 'dict'>
+<class 'dict'>
+<class 'dict'>
+<class 'dict'>
+Ora esecuzione: 2021-01-15 18:46:51.846950
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 2
+
+
+
+<class 'dict'>
+<class 'dict'>
+Ora esecuzione: 2021-01-15 21:35:02.836308
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 4
+
+
+
+<class 'dict'>
+<class 'dict'>
+<class 'dict'>
+<class 'dict'>
+Ora esecuzione: 2021-01-15 22:01:55.681632
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+
+Ora esecuzione: 2021-01-15 22:03:21.270733
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Ora esecuzione: 2021-01-15 22:04:49.763190
+
+Connection to MySQL DB successful
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi@gmail.com
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 4
+
+emailperlatesi3@gmail.com
+emailperlatesi@gmail.com
+emailperlatesi@gmail.com
+emailperlatesi3@gmail.com
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 1
+
+emailperlatesi3@gmail.com
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+
+Sessioni ongoing da eseguire: 0
+
+Sessioni ready da eseguire: 0
+
+
+***********************************
+
+
+

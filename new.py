@@ -1,10 +1,15 @@
+import schedule 
 
-import mysql.connector
-from mysql.connector import Error
-import lib
-connection= lib.create_connection("localhost","root","","tesi")
-cursor=connection.cursor()
-last_session_query="select max(id) from sessione"
-cursor.execute(last_session_query)
-result=cursor.fetchone()[0]
-print(result)
+from subprocess import Popen, PIPE
+import subprocess
+
+process = Popen(['python','main.py'], stdout=PIPE, stderr=PIPE)
+stdout, stderr = process.communicate()
+print(stderr)
+
+#schedule.every(2).minutes.do(call_me())
+'''while True: 
+    try:
+        schedule.run_pending()
+    except:
+        print("terminato con errore")'''
