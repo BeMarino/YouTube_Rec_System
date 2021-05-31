@@ -15,15 +15,13 @@ print(sys.argv[1])
 setup=json.loads(sys.argv[1])
 print(type(setup))
 
-#options =Options()
-#options.add_argument("--lang=it")
-#driver = webdriver.Firefox(options=options)
+
 profile = webdriver.FirefoxProfile()
-profile.set_preference('intl.accept_languages', 'it-IT, it')
+#profile.set_preference('intl.accept_languages', 'it-IT, it')
 driver = webdriver.Firefox(firefox_profile=profile)
 
 #------- carico estensione per bloccare le pubblicità-------#
-driver.install_addon("C:\\Users\\Benny\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\vj6f2v1i.default-release-1605184895016\\extensions\\uBlock0@raymondhill.net.xpi", temporary=True)
+driver.install_addon("extensions\\uBlock0@raymondhill.net.xpi", temporary=True)
 driver.get("http://www.youtube.com")
 driver.implicitly_wait(5)
 

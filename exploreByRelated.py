@@ -15,7 +15,7 @@ password="t3stings3lenium"
 base_url="https://www.youtube.com/watch?v="
 driver = webdriver.Firefox()
 #------- carico estensione per bloccare le pubblicità-------#
-driver.install_addon("C:\\Users\\Benny\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\vj6f2v1i.default-release-1605184895016\\extensions\\uBlock0@raymondhill.net.xpi", temporary=True)
+driver.install_addon("extensions\\uBlock0@raymondhill.net.xpi", temporary=True)
 driver.get("http://www.youtube.com")
 driver.implicitly_wait(5)
 wait = WebDriverWait(driver, 10); 
