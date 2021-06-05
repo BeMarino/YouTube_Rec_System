@@ -1,1 +1,4 @@
 makeHist.py
+results\emailperlatesi@gmail.com
+results\emailperlatesi3@gmail.com
+main.spec

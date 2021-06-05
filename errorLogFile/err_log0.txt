@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "exploreByNext.py", line 77, in <module>
+    exec(open("fillUpDb.py").read(),{"account":setup['account'],"tipo":2})
+  File "<string>", line 46, in <module>
+KeyboardInterrupt

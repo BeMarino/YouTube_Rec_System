@@ -9,6 +9,7 @@ from selenium.webdriver.support import expected_conditions as cond
 from selenium.webdriver.support.ui import WebDriverWait
 from mysql.connector import Error
 from selenium.common import exceptions
+from config import yt_api_key
 
 
 def create_connection(host_name, user_name, user_password,db):
@@ -52,14 +53,13 @@ def getSuggestedTimes(video_id,cursor):
 def getDuration(id):
     if "&" in id:
         id=id[0:id.index("&")]
-    api_key="AIzaSyCWH5-fbx-6X4GHB3fc291PdVOBCyYOQGQ"
-
+    
     api_service_name = "youtube"
     api_version = "v3"
 
     # Get credentials and create an API client
     youtube = googleapiclient.discovery.build(
-        api_service_name, api_version, developerKey=api_key)
+        api_service_name, api_version, developerKey=yt_api_key)
     
     request = youtube.videos().list(
         part="contentDetails",
@@ -68,23 +68,35 @@ def getDuration(id):
     response=request.execute()
     time.sleep(3)
     dur=isodate.parse_duration(response['items'][0]["contentDetails"]["duration"])
-    print("il video con id="+id+" durera'"+str(dur.total_seconds())+"s")
+    
     return int(dur.total_seconds())
  
+
+def acceptCookies(driver):
+    wait = WebDriverWait(driver, 10)
+    elem =driver.find_element_by_class_name("VfPpkd-dgl2Hf-ppHlrf-sM5MNb")
+    
+    elem.click()
+
 def login(driver,email,password):
     wait = WebDriverWait(driver, 10)
-    elem =wait.until(cond.element_to_be_clickable((By.ID,"action-button")))
-    elem.find_element_by_class_name("yt-simple-endpoint").click()
+    # elem =wait.until(cond.element_to_be_clickable((By.ID,"button")))
+    # elem.click()
     elem=driver.find_element_by_id("identifierId")
     elem.send_keys(email)
-    driver.find_element_by_id("identifierNext").find_element_by_tag_name("button").click()
+    #driver.find_element_by_id("identifierNext").find_element_by_tag_name("button").click()
     
+    driver.find_element_by_class_name("VfPpkd-vQzf8d").click()
     wait.until(cond.element_to_be_clickable((By.ID,"password"))).find_element_by_tag_name("input").send_keys(password)
-    driver.find_element_by_id("passwordNext").find_element_by_tag_name("button").click()
+    wait.until(cond.element_to_be_clickable((By.CLASS_NAME,"VfPpkd-vQzf8d"))).click()
+    #wait.until(cond.element_to_be_clickable((By.CLASS_NAME,"RveJvd snByac")))
+    #driver.find_all_element_by_class_name("RveJvd snByac")[1].click()
 
-#Recupera gli id dei video presenti nella lista a parametro, li stampa nel csv e ritorna il primo video suggerito
+
 def getHomeVideosId(driver,file,idSetup): 
-    videos=driver.find_element_by_id("contents").find_elements_by_id("content")
+    wait=WebDriverWait(driver,15)
+    videos=wait.until(cond.presence_of_element_located((By.ID,"contents"))).find_elements_by_id("content")
+    
     next_video=""
     writer=csv.writer(file)
     i=0
@@ -92,7 +104,7 @@ def getHomeVideosId(driver,file,idSetup):
         try:    
 
             url=element.find_element_by_id("thumbnail").get_attribute("href") 
-            print(url)
+            
             if(url):
                 if next_video=="":
                     next_video=element
@@ -103,22 +115,33 @@ def getHomeVideosId(driver,file,idSetup):
         except exceptions.NoSuchElementException:
             print("elemento non trovato")
         
-        print(i)
+        
         if(i==20):
             break
     return next_video
 
-#Recupera gli id dei video presenti nella lista a parametro, li stampa nel csv e ritorna il primo video suggerito
+def search(driver,query):
+    print(query)
+    time.sleep(3)
+    search_box=driver.find_element_by_id("search-input").find_element_by_id("search")
+    search_button=driver.find_element_by_id("search-icon-legacy")
+
+    search_box.send_keys(query)
+    search_button.click()
+
+
+
 def getQueryResult(driver,file,idSetup): 
     wait=WebDriverWait(driver,15)
     contents=wait.until(cond.presence_of_element_located((By.ID,"contents")))
-    videos=contents.find_elements_by_id("dismissable")
+    videos=contents.find_elements_by_id("dismissible")
     next_video=""
+    print(videos)
     writer=csv.writer(file)
     i=0
-    print(videos)
+    
     for element in videos:
-        print(element)
+        
         try:    
             
             url=element.find_element_by_id("thumbnail").get_attribute("href") 
@@ -134,67 +157,62 @@ def getQueryResult(driver,file,idSetup):
             print("elemento non trovato")
         except exceptions.StaleElementReferenceException:
             pass
-        print(i)
+        
         if(i==20):
             break
-    print(next_video)
+    
     return next_video
 
 
 #-----getNextVideo scrive sul csv la lista di tutti i video che vengono consigliati durante la visualizzazione di un video e 
 #     restituisce l'id del video che verrà automaticamente riprodotto una volta finito il video che si sta visualizzando-----
 def getNextVideo(driver,file,watched,tempoOsservazione,idSetup):
-    
+    wait=WebDriverWait(driver,15)
+
     next_=driver.find_element_by_id("related").find_element_by_id("items").find_element_by_id("contents")
     next_video=next_.find_element_by_id("thumbnail").get_attribute("href")
-    related_videos=driver.find_element_by_id("related").find_element_by_id("items").find_elements_by_id("dismissable")
-    print(next_video)
+    related_videos=driver.find_element_by_id("related").find_element_by_id("items").find_elements_by_id("dismissible")
+    
 
     writer=csv.writer(file)
     writer.writerow([watched,next_video[next_video.index("=")+1:],1,0,time.time(),tempoOsservazione,idSetup ])
-    print(len(related_videos))
+    
     for v in related_videos[1:]:
         relatedVideoId=v.find_element_by_id("thumbnail").get_attribute("href")[v.find_element_by_id("thumbnail").get_attribute("href").index("=")+1:]
         if("&" in relatedVideoId):
             relatedVideoId=relatedVideoId[0:relatedVideoId.index("&")]
         writer.writerow([watched,relatedVideoId,0,0,time.time(),tempoOsservazione,idSetup ])
         
-        print(relatedVideoId)
+        
     
     return next_
 
 #-----getNextVideo scrive sul csv la lista di tutti i video che vengono consigliati durante la visualizzazione di un video e 
 #     restituisce l'intera lista dei video suggeriti-----
 def getRelatedVideos(driver,file,watched,tempoOsservazione,idSetup):
+    wait=WebDriverWait(driver,15)
     
-    
-    next_=driver.find_element_by_id("related").find_element_by_id("items").find_element_by_id("contents")
+    next_=next_=wait.until(cond.presence_of_element_located((By.ID,"related")))
     next_video=next_.find_element_by_id("thumbnail").get_attribute("href")
-    related_videos=driver.find_element_by_id("related").find_element_by_id("items").find_elements_by_id("dismissable")
+    related_videos=driver.find_element_by_id("related").find_element_by_id("items").find_elements_by_id("dismissible")
 
     writer=csv.writer(file)
     writer.writerow([watched,next_video[next_video.index("=")+1:],1,0,time.time(),tempoOsservazione,idSetup ])
-    print(len(related_videos))
+    
     for v in related_videos[1:]:
         relatedVideoId=v.find_element_by_id("thumbnail").get_attribute("href")[v.find_element_by_id("thumbnail").get_attribute("href").index("=")+1:]
         if("&" in relatedVideoId):
             relatedVideoId=relatedVideoId[0:relatedVideoId.index("&")]
         writer.writerow([watched,relatedVideoId,0,0,time.time(),tempoOsservazione,idSetup ])
         
-        print(relatedVideoId)
-    
     
     return related_videos
 
-#----la funzione config setta i parametri di esplorazione in base ad un file di configurazione fornito in input----
-def search(driver,query,enter):
-    driver.find_element_by_id("search-input").find_element_by_tag_name("input").send_keys(query+enter)
-    time.sleep(10)
 
 def getDataFromDb(query):
     
     dict_to_hist={}
-    connection=create_connection("localhost","root","","tesi")
+    connection=create_connection("localhost","root","","YR_RS")
     cursor=connection.cursor()
     cursor.execute(query)
         
@@ -243,7 +261,7 @@ def aggiorna_setupsessione(setup,connection,cursor):
 
 def setSessionEndTime(setupId,startedAtTimestamp):
    query="INSERT INTO sessione(setupId,startedAt,finishedAt) VALUES(%s,%s,%s)"
-   connection=create_connection("localhost","root","","Tesi")
+   connection=create_connection("localhost","root","","YT_RS")
    cursor=connection.cursor()
    cursor.execute(query,[setupId,startedAtTimestamp,time.time()])
    cursor.execute("update setupsessione set status=%s where status !=%s  and id=%s",["ongoing","completed",setupId])

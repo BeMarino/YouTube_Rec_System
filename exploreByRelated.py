@@ -1,58 +1,55 @@
 from selenium import webdriver
 from selenium.common import exceptions
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as cond
 from selenium.webdriver.support.ui import WebDriverWait
 import lib
-import csv
 import time
 import sys
 from json import loads
+from config import account_list
+import os
 
 
-password="t3stings3lenium"
 
+profile = webdriver.FirefoxProfile()
+profile.set_preference('intl.accept_languages', 'en-EN, en')
+driver = webdriver.Firefox(firefox_profile=profile)
 base_url="https://www.youtube.com/watch?v="
-driver = webdriver.Firefox()
+
 #------- carico estensione per bloccare le pubblicità-------#
-driver.install_addon("extensions\\uBlock0@raymondhill.net.xpi", temporary=True)
+driver.install_addon("D:\Benny\\università\\Tesi\\extensions\\uBlock0@raymondhill.net.xpi", temporary=False)
 driver.get("http://www.youtube.com")
 driver.implicitly_wait(5)
 wait = WebDriverWait(driver, 10); 
-#setup=sys.argv[1]
+
 setup=loads(sys.argv[1])
+password=account_list.get(setup["account"]).get("password")
 assert "YouTube" in driver.title
+
+lib.acceptCookies(driver)
 
 #-----Accesso account-------
 lib.login(driver,setup['account'],password)
 #-----/Accesso account------
 print(setup['account'],setup['id'])
 
+if setup["account"] not in os.listdir("results/"):
+    os.mkdir("results/"+setup["account"])
 
 with open("results/"+setup['account']+"/by_related_exploration.csv","a+",newline='') as session:
     #-----Ricerca dei video in home page e visualizzazione del primo consigliato-----
     toWatch=lib.getHomeVideosId(driver,session,setup['id'])
     if(setup['query']):
-        lib.search(driver,setup['query'],Keys.ENTER)
-        
+        lib.search(driver,setup['query'])
         lib.getQueryResult(driver,session,setup['id']).click()
     else:
         toWatch.click()
     currentVideoId=driver.current_url[driver.current_url.index("=")+1:]
     time.sleep(5)
     related_videos=lib.getRelatedVideos(driver,session,currentVideoId,setup['viewTime'],setup['id'])
-    print(related_videos)
+    
     i=0
     while setup['steps']>0:
-        
-        '''try: 
-            
-            element = wait.until(cond.element_to_be_clickable(driver.find_element_by_xpath("//button[@class='ytp-ad-skip-button ytp-button']")))
-            element.click();  
-            
-            print("Pubblicita' skippata")
-        except exceptions.NoSuchElementException:
-            print("Il video non contiene pubblicita'")'''
 
         currentVideoId=driver.current_url[driver.current_url.index("=")+1:]
         length=lib.getDuration(currentVideoId)
@@ -77,5 +74,5 @@ driver.close()
 #------Una volta terminati i passi avvio la procedura per inserire i dati relativi ai video e alla sessione nel database------- 
 lib.setSessionEndTime(setup['id'],setup["startedAtTime"])
 print("Id sessione:"+str(setup['id']))
-exec(open("fillUpDb.py").read(),{"account":setup['account'],"tipo":2,"idSetup":setup['id']})
+exec(open("fillUpDb.py").read(),{"account":setup['account'],"tipo":2})
 
