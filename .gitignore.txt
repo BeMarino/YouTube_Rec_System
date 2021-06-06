@@ -2,3 +2,4 @@ makeHist.py
 .pycache
 .vscode
 main.spec
+config.py
