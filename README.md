@@ -7,7 +7,7 @@ A database is used as support to store the collected informations.
 <br>
 <br>
 
-## Collection pipeline
+## Data collection pipeline
 <img src=https://raw.githubusercontent.com/BeMarinoGit/YouTube_Rec_System/master/pipeline.png> 
 <br><br>
 
