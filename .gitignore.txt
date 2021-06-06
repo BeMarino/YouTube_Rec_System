@@ -1,5 +1,4 @@
 makeHist.py
-results\*
 .pycache
 .vscode
 main.spec
