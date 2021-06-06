@@ -35,6 +35,7 @@ lib.login(driver,setup['account'],password)
 
 if setup["account"] not in os.listdir("results/"):
     os.mkdir("results/"+setup["account"])
+    lib.initCsv(setup["account"])
 
 
 with open("results/"+setup['account']+"/next_exploration.csv","a+",newline='') as session:

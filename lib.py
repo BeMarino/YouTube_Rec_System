@@ -44,6 +44,11 @@ def isInDb(video_id,cursor):
     else:
         return 0
 
+def initCsv(account):
+    writer=csv.writer(open(f"results/{account}/next_exploration.csv","w",newline=""))
+    writer.writerow(["watchedVideoId","relatedVideoId","next","homePage","timestamp","timeOfView","sessionSetup"])
+    writer=csv.writer(open(f"results/{account}/by_related_exploration.csv","w",newline=""))
+    writer.writerow(["watchedVideoId","relatedVideoId","next","homePage","timestamp","timeOfView","sessionSetup"])
 
 def getSuggestedTimes(video_id,cursor):
     cursor.execute("select suggested_times from video where id=%s",[video_id])
@@ -223,7 +228,7 @@ def getDataFromDb(query):
     return dict_to_hist
 
 #-----Ritorna tutte le sessioni ongoing che devono essere rieseguite----------
-def checkForOngoing(connection,cursor):
+def checkForOngoing(cursor):
     ongoing_query="select * from setupsessione where status='ongoing' and "+str(time.time())+"-lastExecution>frequency "
     cursor.execute(ongoing_query)
 
@@ -234,7 +239,7 @@ def checkForOngoing(connection,cursor):
    
     return setup_list
 
-def checkForReady(connection,cursor):
+def checkForReady(cursor):
     query="select id,account,tipo,query,steps,viewTime,iterations,executedTimes from setupsessione where status='ready'"
     cursor.execute(query)
 

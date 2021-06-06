@@ -35,6 +35,7 @@ print(setup['account'],setup['id'])
 
 if setup["account"] not in os.listdir("results/"):
     os.mkdir("results/"+setup["account"])
+    lib.initCsv(setup["account"])
 
 with open("results/"+setup['account']+"/by_related_exploration.csv","a+",newline='') as session:
     #-----Ricerca dei video in home page e visualizzazione del primo consigliato-----

@@ -27,7 +27,7 @@ def save(account,method,steps,time,query,iterations,frequency,gradeFrequency):
     if None not in [account,method,steps,time,query,frequency,gradeFrequency]:
         forConversion={"Minutes":60,"Hours":3600,"Days":3600*24}
         DBquery="insert into setupsessione(account,tipo,query,steps,viewTime,status,frequency,iterations) values(%s,%s,%s,%s,%s,%s,%s,%s)"
-        connection= create_connection("localhost","root","","tesi")
+        connection= create_connection("localhost","root","","yt_rs")
         cursor=connection.cursor()
         
         cursor.execute(DBquery,[account,method,query,steps,time,"ready",int(frequency)*int(forConversion[gradeFrequency]),iterations])
