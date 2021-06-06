@@ -25,7 +25,7 @@ Follow the steps listed below to set up the tool:
   * Clone the repository. In terminal run  ``` git clone https://github.com/BeMarinoGit/YouTube_Rec_System.git  ```
   * Move into the downloaded folder ``` cd YouTube_Rec_System ```
   * Install required python libraries ``` pip install -r requirements.txt ```
-  * Import database (```YT_RS.sql```) into the choosen webServer
+  * Import database (```YT_RS.sql```) into the chosen webServer
   * Setting up the ```config.py``` file.
 
 <br>
